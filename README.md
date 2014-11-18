@@ -3,6 +3,10 @@ IDEIMusic
 
 A project developped in the context of system arquichtecture classes.
 
+Notes:
+=========
+The general model of how the project is going to be done in the "docs"
+
 #RUI DEVES-ME UM CAFÉ!!!#
 
 #Important Notes:#
