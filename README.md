@@ -1,7 +1,7 @@
 IDEIMusic
 =========
 
-A project developped in the context of system arquichtecture classes.
+A project developed in the context of system architecture classes.
 
 Notes:
 =========
