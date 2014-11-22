@@ -37,15 +37,20 @@ It consist in creating an "ecosystem" for music album stores. The project consis
 
 =========
 
-###IDEI Music Documentation ###
+###Documentation###
+####Data model - Modelo de dados####
 
-**TODO: add documentation graphics here**
+![ideimusic db](https://cloud.githubusercontent.com/assets/3703930/5154371/bb980af8-7250-11e4-82bb-3bf9e648602e.png)
 
-=========
+![importmusic db](https://cloud.githubusercontent.com/assets/3703930/5154372/bb9833e8-7250-11e4-9666-7be1083feda9.png)
 
-###Music Store Documentation ###
+![musicstore db](https://cloud.githubusercontent.com/assets/3703930/5154370/bb91b766-7250-11e4-81e3-3eb43071b6fe.png)
 
-**TODO: add documentation graphics here**
+####logical view - Lógica de comunicação entre servidores####
+
+![general model](https://cloud.githubusercontent.com/assets/3703930/5154396/64ba4636-7252-11e4-8a10-3c27a028a98b.png)
+
+![register store sequence](https://cloud.githubusercontent.com/assets/3703930/5154397/64ba7b60-7252-11e4-8361-2de8a8efe12a.png)
 
 =========
 =========
