@@ -66,6 +66,8 @@ Consiste no desenvolvimento de um "ecossitema" de compra e venda de albuns music
 . Cada servidor possuí a sua própria base de dados
 
 Autores:
-Francisco Santos (1111315)
-Rui Silva ()
-Sofia Sá ()
+* Francisco Santos (1111315)
+
+* Rui Silva (1121296)
+
+* Sofia Sá ()
