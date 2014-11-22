@@ -70,4 +70,4 @@ Autores:
 
 * Rui Silva (1121296)
 
-* Sofia Sá ()
+* Sofia Sá (1100537)
