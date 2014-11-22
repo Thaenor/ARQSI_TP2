@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <!-- Style Sheet for the page -->
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/buttons.css">
+        
+        <script src="https://maps.googleapis.com/maps/api/js"></script>
+        
+        
+        <script src="javaScript.js"></script>
+        <script src="connections.js"></script>
+        
+        <title>ARQSI | Last.FM Widget</title>
+        
+    </head>
+    <body onload="showTags();"> <!--incluir showTags();-->
+        
+        <div class="body">
+            <div class="outerbody">
+                
+                <div>
+                    <table>
+                        <tr>
+                            <td id="toptagsDiv">
+                                <!--div do botao top tags-->
+                                <a class="formButton" id="toptagsButton" 
+                                   href="#"  align="left"
+                                   onclick="showTags();">
+                                    Top tags
+                                </a>
+                            </td>
+                            <td>
+                                <img width="100%" src="images/lastfm.png"/>
+                            </td>
+                            <td id="toptagsDiv">
+                                <!--div do botao events-->
+                                <a class="formButton" id="eventsButton" 
+                                   href="#" align="left"
+                                   onclick="showEvents();">
+                                    Events
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
+                    
+                </div>
+                
+                <!-- divs do formulario -->
+                <div id="form" class="form">
+                
+                </div>
+                
+            </div>
+            
+            <!--div para introduzir todo o restante tipo de informacao-->
+            <div id="innerBodyDiv" class="innerBody">
+                
+                <div id="topInnerDiv" class="topInner">
+                    
+                </div>
+                
+                <div id="bottomInnerDiv" class="bottomInner">
+                    
+                </div>
+            </div>
+    
+        </div>
+        
+        <div id="tooltipEx" class="tooltipEx">
+        </div>
+        
+        <footer>
+            <a href="mailto:1121296@isep.ipp.pt" style="color:white">1121296 - Rui Silva</a>
+
+        </footer>
+        
+        
+    </body>
+    
+</html>
