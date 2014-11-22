@@ -53,6 +53,20 @@ It consist in creating an "ecosystem" for music album stores. The project consis
 ![register store sequence](https://cloud.githubusercontent.com/assets/3703930/5154397/64ba7b60-7252-11e4-8361-2de8a8efe12a.png)
 
 =========
+
+####Comunicação IDEIMusic - MusicStore####
+
+A comunicação é realizada usando SOAP (XML).
+O gestor da MusicStore (para o caso deste exercício, no geral será aplicado para todos os clientes da editora) deve estar registo e ser detentor de uma chave API *Application Programming Interface*.
+
+Uma encomenda da editora para a loja de música é iniciada pela loja com um pedido inicial HTTP getAllAlbums().
+
+A editora devolve uma lista em formato SOAP (XML) com todos os albuns disponiveis.
+
+O gerente da MusicStore pode então preparar uma resposta com os discos que pretende encomendar (assim como a sua quantidade).
+
+Em caso de sucesso, uma resposta da IDEIMusic confirma a encomenda. Caso contrário, são devolvidos os erros.
+
 =========
 
 ##Resumo do projecto##
