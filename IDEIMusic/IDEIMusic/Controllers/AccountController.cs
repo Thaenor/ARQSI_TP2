@@ -73,6 +73,20 @@ namespace IDEIMusic.Controllers
                 return View(model);
             }
 
+            if (model.Email == "manager@IDEIMusic.pt") 
+            { 
+                //call manager window (CRUD operations)
+                //index/Album
+                //no metodo get view Album retirar o [AllowAnonymous]
+            }
+
+            if (model.Email == "admin@IDEIMusic.pt") 
+            { 
+                //call administrator window (view purchase hystory)
+                //index/Sale
+                //no metodo get view sale retirar o [AllowAnonymous]
+            }
+
             // This doesn't count login failures towards account lockout
             // To enable password failures to trigger account lockout, change to shouldLockout: true
             var result = await SignInManager.PasswordSignInAsync(model.Email, model.Password, model.RememberMe, shouldLockout: false);
