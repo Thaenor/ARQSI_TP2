@@ -19,6 +19,16 @@ you should be able to see this in the server explorer
 ![something](http://i1.asp.net/media/4336272/1dbG.PNG?cdn_id=2014-11-11-001)
 
 =========
+##Our progress so far##
+
+2/12/2014:
+We are using the code first method to implement the record label.
+To make use of the default authentication system we are assuming the admin and manager data are hard coded into the DB with respective emails. When these emails are used to login they will be redirected to the respective page. Manager gets a full CRUD page for Albums while admin will get the same for Sales.
+
+**Important questions**
+ > how do we deal with the DB context and default authentication connection. And reroute them to the Gandalf server?
+
+=========
 ##Project Overview##
 
 This project is developed in the context of system architecture classes (ARQSI).
@@ -81,8 +91,8 @@ Consiste no desenvolvimento de um "ecossitema" de compra e venda de albuns music
 . Cada servidor possuí a sua própria base de dados
 
 Autores:
-* Francisco Santos (1111315)
+. Francisco Santos (1111315)
 
-* Rui Silva (1121296)
+. Rui Silva (1121296)
 
-* Sofia Sá (1100537)
+. Sofia Sá (1100537)
