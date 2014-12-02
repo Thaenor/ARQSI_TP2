@@ -40,7 +40,7 @@ It consist in creating an "ecosystem" for music album stores. The project consis
 ###Documentation###
 ####Data model - Modelo de dados####
 
-![arqsi_tp2_dbmodel](https://cloud.githubusercontent.com/assets/3703930/5239727/0622de92-78e4-11e4-8183-28517e3cf9c6.png)
+![arqsi_tp2_dbmodel](https://cloud.githubusercontent.com/assets/3703930/5268852/f940a304-7a54-11e4-9f94-2a5203f38ca8.jpg)
 
 ####logical view - Lógica de comunicação entre servidores####
 
