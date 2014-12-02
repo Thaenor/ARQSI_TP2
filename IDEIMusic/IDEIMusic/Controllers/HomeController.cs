@@ -10,14 +10,12 @@ namespace IDEIMusic.Controllers
     {
         public ActionResult Index()
         {
-            ViewBag.Message = "Welcome to IDEMusic Record Label.";
-
             return View();
         }
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your app description page.";
+            ViewBag.Message = "Your application description page.";
 
             return View();
         }
