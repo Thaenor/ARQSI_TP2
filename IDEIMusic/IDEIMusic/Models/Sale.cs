@@ -14,7 +14,6 @@ namespace IDEIMusic.Models
     public class Sale
     {
         public int SaleID { get; set; }
-        public virtual ICollection<ApplicationUser> UserID { get; set; }
         public DateTime PurchaseDate { get; set; }
     }
 }
