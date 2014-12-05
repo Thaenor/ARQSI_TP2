@@ -40,7 +40,13 @@ namespace IDEIMusic.Controllers
         {
                 using (LabelContext db = new LabelContext())
                 {
-                    var user = db.Users.Where(a => a.UserEmail.Equals(u.UserEmail) && a.UserPassword.Equals(u.UserPassword)).FirstOrDefault();
+                    var user = db.Users.Where(a => a.LoginName.Equals(u.UserEmail) && a.UserPassword.Equals(u.UserPassword)).FirstOrDefault();
+                    
+                    if(user == null)
+                    {
+                       user = db.Users.Where(a => a.UserEmail.Equals(u.UserEmail) && a.UserPassword.Equals(u.UserPassword)).FirstOrDefault();
+                    }
+
                     if (user != null)
                     {
                         if (user is Administrator)
@@ -61,6 +67,7 @@ namespace IDEIMusic.Controllers
                         }
 
                         Session["ID"] = user.UserID.ToString();
+                        Session["LoginName"] = user.LoginName.ToString();
                         Session["Email"] = user.UserEmail;
                         return View("Index");
 
