@@ -6,7 +6,7 @@
     <title>@ViewBag.Title - IDEIMusic</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
-
+    
 </head>
 <body>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -25,14 +25,11 @@
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
                     @if (Session["ID"] != null)
                     {
-                        if (Session["Role"].ToString() == "Administrator" || Session["Role"].ToString() == "Manager")
-                        {
-                            <li>@Html.ActionLink("Catalogo", "Index", "Albums")</li>
-                        }
-                        if (Session["Role"].ToString() == "Store")
-                        {
-                            <li>@Html.ActionLink("Catalogo", "Index", "Albums")</li>
-                        }
+                        <li>@Html.ActionLink("Catalogo", "Index", "Albums")</li>
+                    }
+                    @if (Session["ID"] != null)
+                    {
+                        <li>@Html.ActionLink("Sales", "Index", "Sales")</li>
                     }
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
@@ -41,7 +38,7 @@
                         if (Session["Role"].ToString() == "Administrator" || Session["Role"].ToString() == "Manager")
                         {
                             <li>
-                                @Html.ActionLink("Manage", "Index", "Administrators")
+                                @Html.ActionLink("Manage Stores", "Index", "Stores")
                             </li>
                         }
                     }

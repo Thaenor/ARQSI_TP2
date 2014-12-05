@@ -3,8 +3,65 @@
 }
 
 <div class="jumbotron">
-    <h1>Olá @Session["LoginName"]</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
+    <h1>Olá @Session["UserName"]</h1>
+
+
+    @if(Session["ID"] == null)
+    {
+        <table>
+            <tr>
+                <td>
+                    Bem Vindo à Editora de música IDEIMusic
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Ao registar a sua loja na nossa editora terá acesso a:
+                    <ul>
+                        <li>
+                            Ver o Catalogo de Albums que a Editora contém
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        
+        
+    } else
+    {
+
+    <h2>Com a sua conta pode:</h2>
+    <ul>
+        @if (Session["Role"] == "Administrator")
+        {
+            <li>
+                Ver Lojas Registadas
+            </li>
+            <li>
+                Apagar Lojas Registadas
+            </li>
+            <li>
+                Registar Lojas
+            </li>
+            <li>
+                Ver Vendas
+            </li>
+        }
+        <li>
+            Ver Catalogo de Albums
+        </li>
+        @if (Session["Role"] == "Manager")
+        {
+            <li>
+                Registar Albums
+            </li>
+            <li>
+                Apagar Albums
+            </li>
+        }
+    </ul>
+    }
+    @*<p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
     <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
 </div>
 
@@ -27,5 +84,5 @@
         <h2>Web Hosting</h2>
         <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
         <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
+    </div>*@
 </div>

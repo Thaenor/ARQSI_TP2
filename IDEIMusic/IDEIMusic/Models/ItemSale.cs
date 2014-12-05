@@ -14,8 +14,7 @@ namespace IDEIMusic.Models
     public class ItemSale
     {
         public int ItemSaleID { get; set; }
-        public ICollection<Sale> SaleID { get; set; }
-        public ICollection<Album> AlbumID { get; set; }
+        public int AlbumID { get; set; }
         public int Quantity { get; set; }
     }
 }

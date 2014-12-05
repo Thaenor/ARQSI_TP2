@@ -11,109 +11,107 @@ using IDEIMusic.Models;
 
 namespace IDEIMusic.Controllers
 {
-    public class StoresController : Controller
+    public class SalesController : Controller
     {
         private LabelContext db = new LabelContext();
 
-        // GET: Stores
+        // GET: Sales
         public ActionResult Index()
         {
-            return View(db.Stores.ToList());
+            return View(db.Sales.ToList());
         }
 
-        // GET: Stores/Details/5
+        // GET: Sales/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Store store = (Store)db.Users.Find(id);
-            if (store == null)
+            Sale sale = db.Sales.Find(id);
+            if (sale == null)
             {
                 return HttpNotFound();
             }
-            return View(store);
+            return View(sale);
         }
 
-        // GET: Stores/Create
+        // GET: Sales/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Stores/Create
+        // POST: Sales/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "UserID,UserEmail,UserName,LoginName,UserPassword")] Store store)
+        public ActionResult Create([Bind(Include = "SaleID,PurchaseDate")] Sale sale)
         {
             if (ModelState.IsValid)
             {
-                Guid a = Guid.NewGuid();
-                store.store_api_key = a.ToString();
-                db.Users.Add(store);
+                db.Sales.Add(sale);
                 db.SaveChanges();
-                return RedirectToAction("Index","Home");
+                return RedirectToAction("Index");
             }
 
-            return View(store);
+            return View(sale);
         }
 
-        // GET: Stores/Edit/5
+        // GET: Sales/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Store store = (Store)db.Users.Find(id);
-            if (store == null)
+            Sale sale = db.Sales.Find(id);
+            if (sale == null)
             {
                 return HttpNotFound();
             }
-            return View(store);
+            return View(sale);
         }
 
-        // POST: Stores/Edit/5
+        // POST: Sales/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "UserID,UserEmail,UserPassword,store_api_key")] Store store)
+        public ActionResult Edit([Bind(Include = "SaleID,PurchaseDate")] Sale sale)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(store).State = EntityState.Modified;
+                db.Entry(sale).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(store);
+            return View(sale);
         }
 
-        // GET: Stores/Delete/5
+        // GET: Sales/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Store store = (Store)db.Users.Find(id);
-            if (store == null)
+            Sale sale = db.Sales.Find(id);
+            if (sale == null)
             {
                 return HttpNotFound();
             }
-            return View(store);
+            return View(sale);
         }
 
-        // POST: Stores/Delete/5
+        // POST: Sales/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Store store = (Store)db.Users.Find(id);
-            db.Users.Remove(store);
+            Sale sale = db.Sales.Find(id);
+            db.Sales.Remove(sale);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

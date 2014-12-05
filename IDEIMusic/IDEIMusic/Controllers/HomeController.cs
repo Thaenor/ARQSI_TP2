@@ -60,6 +60,8 @@ namespace IDEIMusic.Controllers
                         else if (user is Store)
                         {
                             Session["Role"] = "Store";
+                            Store a = (Store)user;
+                            Session["API_Key"] = a.store_api_key.ToString();
                         }
                         else
                         {
@@ -68,6 +70,7 @@ namespace IDEIMusic.Controllers
 
                         Session["ID"] = user.UserID.ToString();
                         Session["LoginName"] = user.LoginName.ToString();
+                        Session["UserName"] = user.UserName.ToString();
                         Session["Email"] = user.UserEmail;
                         return View("Index");
 
