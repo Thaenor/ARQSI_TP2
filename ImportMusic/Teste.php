@@ -1,11 +1,14 @@
 <?php
-    include 'DAL2.php';
+
+    require_once('nusoap.php');
+    require_once ('DAL2.php');
+
 
     $dal=new dal();
 
     $conn=$dal->db_connect();
 
-    if ($conn) echo "fuck yea";
+    if ($conn) echo "Connection OK";
 
     $dal->createTable($conn);
 
@@ -15,6 +18,9 @@
     $dal->db_insertData_InfoVendas($link,$name,$loja,$quantidade );//funcional se a tabela não estiver criada vai criala
     $dal->db_dropTable_InfoVendas($link);//funcional*/
 
-    $dal->insertSales("ABC","xpto","10.55");
+    $name='ABC';
+    $prod='xpto';
+    $price=10.95;
+    $dal->insertSales($name,$prod,$price);
     $dal->db_close($conn);
 ?>
