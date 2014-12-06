@@ -15,11 +15,24 @@ namespace IDEIMusic.Controllers
     {
         private LabelContext db = new LabelContext();
 
+        private ISaleRepository repo;
+
+        public SalesController()
+            : this(new SaleRepository())
+        { }
+
+        public SalesController(ISaleRepository rep)
+        {
+            repo = rep;
+        }
+
         // GET: Sales
         public ActionResult Index()
         {
-            return View(db.Sales.ToList());
+            ViewData["summaries"] = repo.GetSaleSummaries();
+            return View(ViewData);
         }
+
 
         // GET: Sales/Details/5
         public ActionResult Details(int? id)

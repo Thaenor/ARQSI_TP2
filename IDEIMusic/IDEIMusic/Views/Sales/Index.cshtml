@@ -1,40 +1,42 @@
-﻿@model IEnumerable<IDEIMusic.Models.Sale>
-
-@{
-    ViewBag.Title = "Index";
+﻿@{
+    ViewBag.Title = "Sales";
 }
+<h2>Record of Sales</h2>
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ItemSaleID)
+            Sale ID
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.PurchaseDate)
+            Purchase Date
         </th>
-        <th></th>
+        <th>
+            Quantity of Albums
+        </th>
+        <th>
+            Income
+        </th>
     </tr>
 
-@foreach (var item in Model) {
+@{
+    foreach (var item in ViewData["summaries"] as IEnumerable<IDEIMusic.Models.SaleSummary>)
+    {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.ItemSaleID)
+            @Html.DisplayFor(modelItem => item.ID)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.PurchaseDate)
         </td>
-        
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.SaleID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.SaleID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.SaleID })
+            @Html.DisplayFor(modelItem => item.Quantity)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Income)
         </td>
     </tr>
+    }
 }
 
 </table>

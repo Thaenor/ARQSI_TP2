@@ -40,6 +40,23 @@ namespace IDEIMusic.Migrations
                 new Album { Name="LOVE IN VENICE", Artist="ANDRE RIEU", StockAmount=11, UnitPrice=20, Discount=10 }
             };
             albums.ForEach(s => context.Albums.AddOrUpdate(p => p.Name, s));
+
+            var salesItens = new List<ItemSale>
+            {
+                new ItemSale { AlbumID = 1,Quantity = 6},
+                new ItemSale { AlbumID = 2,Quantity = 2},
+                new ItemSale { AlbumID = 4,Quantity = 1},
+                new ItemSale { AlbumID = 6,Quantity = 2}
+            };
+            salesItens.ForEach(s => context.ItemSale.AddOrUpdate(p => p.AlbumID, s));
+
+            var sales = new List<Sale>
+            {
+                new Sale { ItemSaleID = salesItens, PurchaseDate = DateTime.Now}
+            };
+            sales.ForEach(s => context.Sales.AddOrUpdate(p => p.SaleID, s));
+
+            
             context.SaveChanges();
         }
     }

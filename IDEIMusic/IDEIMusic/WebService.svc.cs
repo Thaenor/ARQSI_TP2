@@ -33,6 +33,7 @@ namespace IDEIMusic
 
         // Add more operations here and mark them with [OperationContract]
 
+        [WebGet]
         [OperationContract]
         public string verifyAPI(string inputJSON)
         {
@@ -48,6 +49,7 @@ namespace IDEIMusic
 
         }
 
+        [WebGet]
         [OperationContract]
         public string firstContact(string inputJSON)
         {
@@ -70,12 +72,14 @@ namespace IDEIMusic
             return result;
         }
 
+        [WebGet]
         [OperationContract]
         public string getAllAbums()
         {
             return Json.Encode(db.Albums.ToList());
         }
 
+        [WebGet]
         [OperationContract]
         public string RegisterSale(string inputJSON)
         {
@@ -91,6 +95,7 @@ namespace IDEIMusic
 
         }
 
+        [WebGet]
         [OperationContract]
         public string updateAlbumStock(string inputJSON)
         {

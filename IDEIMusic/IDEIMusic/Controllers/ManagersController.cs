@@ -18,7 +18,7 @@ namespace IDEIMusic.Controllers
         // GET: Managers
         public ActionResult Index()
         {
-            return View(db.Users.ToList());
+            return View(db.Managers.ToList());
         }
 
         // GET: Managers/Details/5
