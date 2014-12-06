@@ -8,6 +8,7 @@ using System.ServiceModel.Activation;
 using System.ServiceModel.Web;
 using System.Text;
 using System.Web.Helpers;
+using IDEIMusic.Models;
 
 namespace IDEIMusic
 {
@@ -45,6 +46,28 @@ namespace IDEIMusic
 
             return result;
 
+        }
+
+        [OperationContract]
+        public string firstContact(string inputJSON)
+        {
+            var j = Json.Decode(inputJSON);
+
+            string userName = j["UserEmail"];
+            var user = db.Users.Where(a => a.UserEmail.Equals(userName)).FirstOrDefault();
+
+            string result = "fail";
+
+            if(user != null)
+            {
+                if (user is Store)
+                {
+                    Store a = (Store)user;
+                    result = a.store_api_key.ToString();
+                }
+            }
+
+            return result;
         }
 
         [OperationContract]
