@@ -41,30 +41,20 @@ ini_set('display_errors', 'on');
 				  )";
             $result = mysqli_query($conn, $query);
         }
-		
-		function insertSales(string $StoreName,string $Prod,int $qty){
+
+		function insertSales($StoreName, $Prod, $price){
 		
 			$conn = $this->db_connect();
-			$recordset = $conn->query($this->CREATE_TABLE_SCRIPT);
-			
-			
+            //echo $conn;
+			//$recordset = $conn->query($this->CREATE_TABLE_SCRIPT);
+
 			if($conn){
-				$strquery="INSERT INTO SalesRecord(StoreName, Product, Quantity) VALUES ($StoreName,$Prod,$qty)";
+				$strquery="INSERT INTO salesrecord(StoreName,Product,Price) VALUES ('$StoreName','$Prod',$price)";
                 $result =$conn->query($strquery);
+                echo $result;
                 return $result;
             }
 
 		}
 	}
-	
-$ligacao = new DAL;
-$ligacao-> db_connect();
-
-if(is_null($ligacao)){
-	$ligacao->insertSales("lojaMusica","Album1",10);
-	echo $ligacao;
-}
-else{
-	echo "esta mau!!!";
-}
 ?>

@@ -5,18 +5,22 @@ ini_set('display_errors', 'on');
 
     require_once('lib/nusoap.php');
 
-    echo'Ola Servico!';
-    $ns="urn:WSImportMusicServer";
+    //$ns='urn:WSImportMusicServer';
 
-    $WSDL_uri="http://localhost/WSnusoap/WSImportMusicServer.php?wsdl";
+    $client = new nusoap_client ( 'http://localhost/Ana/ImportMusic/WSImportMusicServer.php');
 
-    $client = new nusoap_client ( $WSDL_uri,'wsdl' );
-    if ( $client->getError() ) {
+	if ( $client->getError() ) {
         print "<h2>Soap Constructor Error:</h2><pre>".
             $client->getError()."</pre>";
     }
-    $params=array("StoreName"=>"abc", "Prod"=>"xpto","price"=>10.95);
-    $result = $client->call( "recordsale", array("parameters"=>$params), $ns);
-    echo"$result";
+
+	//$params = array('store'=>'abc', 'prod'=>'xpto','price'=>10.95);
+    echo'alguma coisa antes de inserir';
+
+    $result = $client->call('recordSale',array('store'=>'abc', 'prod'=>'xpto','price'=>10.95));
+
+    echo'depois de inserir';
+
+    echo $result;
 
 ?>
