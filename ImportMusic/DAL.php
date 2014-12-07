@@ -15,8 +15,7 @@ ini_set('display_errors', 'on');
 		
 		function db_connect(){
 			$conn= new mysqli($this->db_host,$this->db_user,$this->db_pass,$this->db_name);
-			echo 'olaaa';
-			if (!$conn) echo "test";
+
 			if(mysqli_connect_errno()){
 				echo "Failed to connect to MySQL: " . $conn->connect_error;
 			}
@@ -45,8 +44,6 @@ ini_set('display_errors', 'on');
 		function insertSales($StoreName, $Prod, $price){
 		
 			$conn = $this->db_connect();
-            //echo $conn;
-			//$recordset = $conn->query($this->CREATE_TABLE_SCRIPT);
 
 			if($conn){
 				$strquery="INSERT INTO salesrecord(StoreName,Product,Price) VALUES ('$StoreName','$Prod',$price)";
