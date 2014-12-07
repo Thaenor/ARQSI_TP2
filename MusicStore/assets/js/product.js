@@ -1,18 +1,13 @@
 // product class
-function product(sku, name, description, price,
-  cal, carot, vitc, folate, potassium, fiber) {
-    this.sku = sku; // product code (SKU = stock keeping unit)
+function product(name, artist, price,
+  quantity, discount, image) {
     this.name = name;
-    this.description = description;
+    this.artist = artist;
     this.price = price;
-    this.cal = cal;
-    this.nutrients = {
-      "Carotenoid": carot,
-      "Vitamin C": vitc,
-      "Folates": folate,
-      "Potassium": potassium,
-      "Fiber": fiber
-    };
+    this.quantity = quantity;
+    this.discount = discount;
+    this.image = image;
+
   }
 
 /******************************************************************************/

@@ -1,24 +1,40 @@
+var catalog = new Array();
+var cart = new Array();
+var Tprice;
 
-function printCatalog(json){
+var username;
+
+function compileCatalog(json, username){
+  for(var x=0; x<json.Catalog.length; x++){
+    catalog.push( new product(json.Catalog.Name[x], json.Catalog.price[x], json.Catalog.quantity[x], json.Catalog.discount[x]) );
+    console.log(catalog[x]);
+  }
+
+  //printCatalog();
+}
+
+function printCatalog(){
 
   var container = document.getElementById('CatalogDisplay');
   container.innerHTML = "";
-  for(var x=0; x<json.Catalog.length; x++){
-    container.innerHTML += json.Catalog[x].Name+" | "+json.Catalog[x].price;
+  for(var x=0; x<Catalog.length; x++){
+    container.innerHTML += Catalog[x].Name+" | "+Catalog[x].price + " | " +Catalog[x].discount;
     container.innerHTML += " &nbsp; ";
-    var n = json.Catalog[x].Name;
-    var p = json.Catalog[x].price;
+
+    //well take it from here when everything displays properly
+    //var n = json.Catalog[x].Name;
+    //var p = json.Catalog[x].price;
     //var stringer =  '<input type="button" value="buy" onclick="addToCart("'+n+'",'+p+')">';
     //var stringer = '<div id="buyButtCont">buy this shit</div>';
     //container.innerHTML += stringer;
     //container.innerHTML += "<br/>";
 
-    var link = document.createElement('a');
-    var method = "addToCart("+'"'+n+'"'+","+'"'+p+'"'+")";
-    var linkText = document.createTextNode('add to cart');
+    //var link = document.createElement('a');
+    //var method = "addToCart("+'"'+n+'"'+","+'"'+p+'"'+")";
+    //var linkText = document.createTextNode('add to cart');
 
-    link.appendChild(linkText);
-    container.appendChild(link);
+    //link.appendChild(linkText);
+    //container.appendChild(link);
   }
 }
 

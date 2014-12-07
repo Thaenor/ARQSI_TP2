@@ -1,11 +1,7 @@
 var xmlHttpObj;
 var doctext;
 
-var cart = new Array();
-var Tprice;
 
-var username;
-var cash;
 
 /******************************************************************************/
 
@@ -77,18 +73,30 @@ function stateHandler()
             ele.style.visibility = 'visible';
         }else {
             var json = JSON.parse(doctext);
+            createCookie("username",json.User.Name, 1);
+            compileCatalog(json);
             var container = document.getElementById('loginWidget');
             container.innerHTML="welcome "+json.User.Name+"!";
             container.innerHTML+="<hr>";
-            container.innerHTML+="you have: <p id='cashCont'>"+json.User.cash+"€</p> <hr>";
-            container.innerHTML+='<br/><input type="button" value="view cart" onclick="viewCart()">';
-            container.innerHTML+='<br/><div id="CartSpace" style="visibility: hidden"></div>';
-            username = json.User.Name;
-            cash = json.User.cash;
-            printCatalog(json);
+            container.innerHTML+="<button id='logout' value='logout' onclick='logout()'>"
+            /*container.innerHTML+='<br/><input type="button" value="view cart" onclick="viewCart()">';
+            container.innerHTML+='<br/><div id="CartSpace" style="visibility: hidden"></div>';*/
+            printCatalog(json, json.User.Name);
         }
 
     }
 }
 
 /******************************************************************************/
+/*http://stackoverflow.com/questions/6561687/how-can-i-set-a-cookie-to-expire-after-x-days-with-this-code-i-have*/
+function createCookie(name, value, days) {
+  var date, expires;
+  if (days) {
+    date = new Date();
+    date.setTime(date.getTime()+(days*24*60*60*1000));
+    expires = "; expires="+date.toGMTString();
+  } else {
+    expires = "";
+  }
+  document.cookie = name+"="+value+expires+"; path=/";
+}
