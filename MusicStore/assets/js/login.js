@@ -129,5 +129,18 @@ function logout(){
   var cont = document.getElementById('loginform');
   cont.style.visibility="visible";
   var cont = document.getElementById('welcome');
-  cont.style.visibility="hidden"; 
+  cont.style.visibility="hidden";
+}
+
+function refresh()
+{
+  alert('welcome'+readCookie('username'));
+  if(readCookie('username')){
+    var container = document.getElementById('welcome');
+    container.innerHTML="welcome "+readCookie('username')+"!";
+    var cont = document.getElementById('loginform');
+    cont.style.visibility="hidden";
+    var ele = document.getElementById('logoutbutt');
+    ele.style.visibility = "visible";
+  }else {logout()}
 }
