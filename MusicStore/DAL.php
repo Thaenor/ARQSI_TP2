@@ -2,23 +2,20 @@
 //"SOU UM BURRO STRESSADO!!"
 
 class DAL {
-  /*private $DB_HOST = 'localhost';
-  private $DB_HOST2 = '172.31.100.24';
-  private $DB_USER = 'arqsi';
-  private $DB_PASS = 'arqsi1415';
-  private $DB_NAME = 'DBMusicStore';*/
-  private $DB_HOST = 'localhost';
-  private $DB_HOST2 = '172.31.100.24';
-  private $DB_USER = 'root';
-  private $DB_PASS = 'root';
-  private $DB_NAME = 'MusicStore';
+
+    private $DB_HOST = 'localhost';
+    private $DB_USER = 'root';
+    private $DB_PASS = '';
+    private $DB_NAME = 'dbmusicstore';
 
   private $CREATE_USERS_TABLE_SCRIPT = 'CREATE TABLE IF NOT EXISTS USERS (
     `UserID` VARCHAR(40) NOT NULL ,
     `Password` varchar(32) NOT NULL,
+    `Type` INT NOT NULL,
     `API_KEY` varchar(16),
     PRIMARY KEY(UserID)
   )ENGINE=MyISAM DEFAULT CHARSET=latin1;';
+
 
   private $CREATE_SALE_TABLE_SCRIPT = 'CREATE TABLE IF NOT EXISTS SALE (
     `SaleID` INT NOT NULL auto_increment ,
@@ -40,68 +37,43 @@ class DAL {
   )ENGINE=MyISAM DEFAULT CHARSET=latin1;';
 
   private $CREATE_ALBUM_TABLE_SCRIPT = 'CREATE TABLE IF NOT EXISTS ALBUM (
-    `AlbumID` varchar(40) NOT NULL,
+    `AlbumID` INT NOT NULL auto_increment ,
     `AlbumName` varchar(80) NOT NULL,
-    `Artist` varchar(80) NOT NULL,
+    `AlbumArtist` varchar(80) NOT NULL,
     `AmountStock` INT NOT NULL,
     `UnitPrice` DECIMAL(5,2) NOT NULL,
     PRIMARY KEY(AlbumID)
   )ENGINE=MyISAM DEFAULT CHARSET=latin1;' ;
 
   function db_mysqliconn() {
-    $mysqli = new mysqli($this->DB_HOST, $this->DB_USER, $this->DB_PASS, $this->DB_NAME);
-    if(mysqli_connect_error()){
-      $mysqli = new mysqli($this->DB_HOST2, $this->DB_USER, $this->DB_PASS, $this->DB_NAME);
-      if(mysqli_connect_error())
-      return null;
-    }
-
-    return $mysqli;
-  }
+            $mysqli = new mysqli($this->DB_HOST, $this->DB_USER, $this->DB_PASS, $this->DB_NAME);
+            if(mysqli_connect_error())
+                return null;
+            return $mysqli;
+        }
 
   ///////////////////////////////////////// INSERTS /////////////////////////////////////////
 
-  function insertAlbum($AlbumID, $AlbumName,$AlbumArtist, $AmountStock, $UnitPrice) {
+  function insertAlbum($AlbumName,$AlbumArtist, $AmountStock, $UnitPrice) {
     $mysqli = $this-> db_mysqliconn();
 
     // por precaucao pede-se para criar a tabela CASO(SE) esta nao exista
     $recordset = $mysqli->query($this->CREATE_ALBUM_TABLE_SCRIPT);
 
-    if($recordset) {
-      ?>
-      <script type="application/javascript">
-        alert("SUCESSO!");
-      </script>
-      <?php
-    }
-    else
+    if($recordset) {} else
     {
       ?>
       <script type="application/javascript">
-        alert("FALHOU!");
+        alert("FALHOU a verificar a tabela!");
       </script>
       <?php
     }
 
-    $sql = "INSERT INTO `ALBUM` (`AlbumID`,`AlbumName`,`AlbumArtist`,`AmountStock`,`UnitPrice`) VALUES ('$AlbumID','$AlbumName','$AlbumArtist','AmountStock','UnitPrice')";
+    $sql = "INSERT INTO `ALBUM` (`AlbumName`,`AlbumArtist`,`AmountStock`,`UnitPrice`) VALUES ('$AlbumName','$AlbumArtist',$AmountStock,$UnitPrice)";
 
     $result = mysqli_query($mysqli, $sql);
-
-    if($result) {
-      ?>
-      <script type="application/javascript">
-        alert("Resultado do pedido de insercao de pedido da TAG - SUCESSO!");
-      </script>
-      <?php
-    }
-    else
-    {
-      ?>
-      <script type="application/javascript">
-        alert("Resultado do pedido de insercao de pedido da TAG - FALHOU!");
-      </script>
-      <?php
-    }
+    $this->db_close();
+    return $result;
   }
 
   function insertItemSale($SaleID, $AlbumID, $Quantity)
@@ -111,18 +83,11 @@ class DAL {
     // por precaucao pede-se para criar a tabela CASO(SE) esta nao exista
     $recordset = $mysqli->query($this->CREATE_ITEMSALE_TABLE_SCRIPT);
 
-    if($recordset) {
-      ?>
-      <script type="application/javascript">
-        alert("SUCESSO!");
-      </script>
-      <?php
-    }
-    else
+    if($recordset) {} else
     {
       ?>
       <script type="application/javascript">
-        alert("FALHOU!");
+        alert("FALHOU a verificar a tabela!");
       </script>
       <?php
     }
@@ -130,39 +95,87 @@ class DAL {
     $sql = "INSERT INTO `ITEMSALE` (`SaleID`,`AlbumID`,`Quantity`,`AmountStock`,`UnitPrice`) VALUES ('$SaleID','$AlbumID','$Quantity')";
 
     $result = mysqli_query($mysqli, $sql);
+    $this->db_close();
+    return $result;
+  }
 
-    if($result) {
-      ?>
-      <script type="application/javascript">
-        alert("Resultado do pedido de insercao de pedido da TAG - SUCESSO!");
-      </script>
-      <?php
-    }
-    else
+  function insertSale($UserID, $cart)
+  {
+    $mysqli = $this-> db_mysqliconn();
+
+    // por precaucao pede-se para criar as tabelas CASO(SE) esta nao existam
+    $recordset = $mysqli->query($this->CREATE_ITEMSALE_TABLE_SCRIPT);
+    if($recordset) {} else
     {
       ?>
       <script type="application/javascript">
-        alert("Resultado do pedido de insercao de pedido da TAG - FALHOU!");
+        alert("FALHOU a verificar a tabela!");
       </script>
       <?php
     }
+    $recordset = $mysqli->query($this->CREATE_SALE_TABLE_SCRIPT);
+    if($recordset) {} else
+    {
+      ?>
+      <script type="application/javascript">
+        alert("FALHOU a verificar a tabela!");
+      </script>
+      <?php
+    }
+
+    $sqlSale = "INSERT INTO `SALE` (`UserID`) VALUES ('$UserID')";
+    $result = mysqli_query($mysqli, $sql);
+    
+    $sqlGetSaleID = "SELECT LAST(`SaleID`) FROM `Sale`;";
+    $lastSaleID = mysql_query($mysqli, $lastSaleID);
+
+    $numberSales = 0;
+    
+    foreach ($cartRow as $cart) {
+      $AlbumID = $cartRow["AlbumID"];
+      $Quantity = $cartRow["Quantity"];
+
+      $sqlSale = "INSERT INTO `ITEMSALE` (`SaleID`,`AlbumID`,`Quantity`) VALUES ('$lastSaleID','$AlbumID',$Quantity)";
+      $result = mysqli_query($mysqli, $sql);
+      if($result)
+        $numberSales = $numberSales + 1;
+    }
+    
+    $this->db_close();
+    return $numberSales;
   }
 
-  function insertSale($UserID, $SaleDate)
+  function insertClient($UserID, $Password)
   {
     $mysqli = $this-> db_mysqliconn();
 
     // por precaucao pede-se para criar a tabela CASO(SE) esta nao exista
     $recordset = $mysqli->query($this->CREATE_ITEMSALE_TABLE_SCRIPT);
 
-    if($recordset) {
+    if($recordset) {} else
+    {
       ?>
       <script type="application/javascript">
-        alert("SUCESSO!");
+        alert("FALHOU a verificar a tabela!");
       </script>
       <?php
     }
-    else
+
+    $sql = "INSERT INTO `USERS` (`UserID`,`Password`,`Type`) VALUES ('$UserID','$Password',2)";
+
+    $result = mysqli_query($mysqli, $sql);
+    $this->db_close();
+    return $result;
+  }
+
+  function insertAdmin($UserID, $Password)
+  {
+    $mysqli = $this-> db_mysqliconn();
+
+    // por precaucao pede-se para criar a tabela CASO(SE) esta nao exista
+    $recordset = $mysqli->query($this->CREATE_ITEMSALE_TABLE_SCRIPT);
+
+    if($recordset) {} else
     {
       ?>
       <script type="application/javascript">
@@ -171,123 +184,137 @@ class DAL {
       <?php
     }
 
-    $sql = "INSERT INTO `SALE` (`UserID`,`SaleDate`) VALUES ('$UserID','$SaleDate')";
+    $sql = "INSERT INTO `USERS` (`UserID`,`Password`,`Type`) VALUES ('$UserID','$Password',1)";
 
     $result = mysqli_query($mysqli, $sql);
-
-    if($result) {
-      ?>
-      <script type="application/javascript">
-        alert("Resultado do pedido de insercao de pedido da TAG - SUCESSO!");
-      </script>
-      <?php
-    }
-    else
-    {
-      ?>
-      <script type="application/javascript">
-        alert("Resultado do pedido de insercao de pedido da TAG - FALHOU!");
-      </script>
-      <?php
-    }
-  }
-
-  function insertUser($UserID, $Password)
-  {
-    $mysqli = $this-> db_mysqliconn();
-
-    // por precaucao pede-se para criar a tabela CASO(SE) esta nao exista
-    $recordset = $mysqli->query($this->CREATE_ITEMSALE_TABLE_SCRIPT);
-
-    if($recordset) {
-      ?>
-      <script type="application/javascript">
-        alert("SUCESSO!");
-      </script>
-      <?php
-    }
-    else
-    {
-      ?>
-      <script type="application/javascript">
-        alert("FALHOU!");
-      </script>
-      <?php
-    }
-
-    $sql = "INSERT INTO `USERS` (`UserID`,`Password`) VALUES ('$UserID','$Password')";
-
-    $result = mysqli_query($mysqli, $sql);
-
-    if($result) {
-      ?>
-      <script type="application/javascript">
-        alert("Resultado do pedido de insercao de pedido da TAG - SUCESSO!");
-      </script>
-      <?php
-    }
-    else
-    {
-      ?>
-      <script type="application/javascript">
-        alert("Resultado do pedido de insercao de pedido da TAG - FALHOU!");
-      </script>
-      <?php
-    }
+    $this->db_close();
+    return $result;
   }
 
   ////////////////////////////////////////// GETS ///////////////////////////////////////////
 
-  function getAllAlbuns(){
+  function getAllAlbums(){
     $mysqli = $this->db_mysqliconn();
+    $strquery = 'SELECT * FROM `ALBUM`';
+    
     if($mysqli){
-      $strquery = "SELECT * FROM `ALBUM`";
       $recordset = $mysqli->query($strquery);
-      return $recordset;
+      
+      $results = array();
+
+      if ($recordset->num_rows > 0) {
+        foreach ($recordset as $row) {
+          array_push($results, $row);
+        }
+      }
+      $this->db_close();
+      return json_encode($results);
     }
-    return null;
+    $this->db_close();
+    return false;
   }
 
   function getAlbumInfo($AlbumID){
     $mysqli = $this->db_mysqliconn();
+    $strquery = "SELECT * FROM `ALBUM` WHERE AlbumID = $AlbumID";
+    
     if($mysqli){
-      $strquery = "SELECT * FROM `ALBUM` WHERE AlbumID = $AlbumID";
       $recordset = $mysqli->query($strquery);
+      
+      $results = array();
+
+      if ($recordset->num_rows > 0) {
+        $row = $recordset->fetch_assoc();
+        $this->db_close();
+        return json_encode($row);
+      }
+      $this->db_close();
       return $recordset;
     }
+    $this->db_close();
     return null;
   }
 
   function validLogin($UserID, $Password)
   {
-    $mysqli = $this->db_mysqliconn();
+    $mysqli = $this-> db_mysqliconn();
+    // por precaucao pede-se para criar a tabela CASO(SE) esta nao exista
+    $recordset = $mysqli->query($this->CREATE_USERS_TABLE_SCRIPT);
+    if($recordset) {} else
+    {
+      ?>
+      <script type="application/javascript">alert("FALHOU a verificar a tabela!");</script>
+      <?php
+    }
     if($mysqli){
       $strquery = "SELECT * FROM `users` WHERE UserID = '$UserID' AND Password = '$Password'";
       $recordset = $mysqli->query($strquery);
       if ($recordset->num_rows > 0) {
         $row = $recordset->fetch_assoc();
-        if ($row["API_KEY"]) {
+        if ($row["Type"] == "1") {
+          $this->db_close();
           return 1; //Admin
         }
-        else
-        {
+        if ($row["Type"] == "2") {
+          $this->db_close();
           return 2; //Client
         }
       }
       else
       {
+        $this->db_close();
         return 0; // Error
       }
-      return $recordset;
     }
+    $this->db_close();
     return null;
   }
 
-    function sanitize($sqlString){
+  function verifyAPI_KEY($userID)
+  {
+    $mysqli = $this->db_mysqliconn();
+    if($mysqli){
+      $strquery = "SELECT API_KEY FROM `users` WHERE UserID = '$userID'";
+      $recordset = $mysqli->query($strquery);
+      if ($recordset->num_rows > 0) {
+        $row = $recordset->fetch_assoc();
+        if ($row["API_KEY"]) {
+          $this->db_close();
+          return 1;
+        }
+        else
+        {
+          $this->db_close();
+          return 0;
+        }
+      }
+    }
+    $this->db_close();
+    return -1;
+  }
+
+  function insertAPI_KEY($userID, $API_KEY)
+  {
+    $mysqli = $this->db_mysqliconn();
+    // por precaucao pede-se para criar a tabela CASO(SE) esta nao exista
+    $recordset = $mysqli->query($this->CREATE_USERS_TABLE_SCRIPT);
+    if($recordset) {} else
+    {
+      ?>
+      <script type="application/javascript">alert("FALHOU a verificar a tabela!");</script>
+    <?php
+    }
+    $sql = "UPDATE `users` SET `API_KEY`='$API_KEY' WHERE `UserID`='$userID'";
+    $result = mysqli_query($mysqli, $sql);
+    $this->db_close();
+    return $result;
+  }
+
+  function sanitize($sqlString){
         $mysqli = $this->db_mysqliconn();
         return $mysqli->real_escape_string($sqlString);
     }
-
+  
   function db_close() {
     $mysqli= $this->db_mysqliect();
     mysqli_close($mysqli);
