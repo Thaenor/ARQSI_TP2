@@ -21,6 +21,9 @@ else
     echo 'ERROR: password not set';
 
 $dal = new DAL();
+//prevents SQL injection
+$username = $dal->sanitize($username);
+$password = $dal->sanitize($password);
 
 if( $dal->validLogin($username, $password) == true){
 
