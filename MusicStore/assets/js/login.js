@@ -89,6 +89,7 @@ function stateHandler()
 
 /******************************************************************************/
 /*http://stackoverflow.com/questions/6561687/how-can-i-set-a-cookie-to-expire-after-x-days-with-this-code-i-have*/
+/*http://www.quirksmode.org/js/cookies.html*/
 function createCookie(name, value, days) {
   var date, expires;
   if (days) {
@@ -101,9 +102,24 @@ function createCookie(name, value, days) {
   document.cookie = name+"="+value+expires+"; path=/";
 }
 
+function readCookie(name) {
+    var nameEQ = name + "=";
+    var ca = document.cookie.split(';');
+    for(var i=0;i < ca.length;i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') c = c.substring(1,c.length);
+        if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+    }
+    return null;
+}
+
+function eraseCookie(name) {
+    createCookie(name,"",-1);
+}
+
 /******************************************************************************/
 
 function logout(){
-  //coockie.destroy();
-  //resto da logica
+  eraseCookie('username');
+    
 }

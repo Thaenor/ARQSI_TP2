@@ -49,10 +49,12 @@ else
         $password = $dal->sanitize($password);
         $flag = $dal->insertUser($username,$password);
         //client expects a message with "success!" string or it will handle has failure.
-        if($flag == true){
+        if($flag == 1){
             echo 'success!';
         }
     }catch(Exception $e){
         $errors[] = 'something went wrong, check your Internet connection and try again in a few minutes. If this problem persists please bother the developers, please tell them'.$e;
         print_r($errors);
     }
+
+echo 'end';

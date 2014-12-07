@@ -14,7 +14,7 @@ function registationValidator(){
     var rePassword = document.getElementById('regPassword2').value;
 
     if(username != '' && password != '' && rePassword != '' && password == rePassword){
-        MakeRegisterXMLHTTPCall(username,password, rePassword);
+        MakeRegisterXMLHTTPCall(username,password,rePassword);
     }else {
         var ele = document.getElementById('errorlist');
         ele.innerHTML = 'we couldn\'t find the server, please review your user name and password while we try to figure where he went.';
@@ -63,8 +63,9 @@ function RegisterstateHandler()
     {
         // propriedade responseText que devolve a resposta do servidor
         doctext = xmlHttpObj.responseText;
-
+        console.log(xmlHttpObj.responseText);
+        alert(xmlHttpObj.responseText);
         console.log(doctext);
-        if(doctext=='success!'){console.log('success!!!');}
+        if(doctext!=''){alert("yey"); console.log('success!!!');}
     }
 }
