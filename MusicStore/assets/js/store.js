@@ -1,0 +1,1 @@
+/*store class javascript*/
