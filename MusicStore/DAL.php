@@ -283,6 +283,11 @@ class DAL {
     return null;
   }
 
+    function sanitize($sqlString){
+        $mysqli = $this->db_mysqliconn();
+        return $mysqli->real_escape_string($sqlString);
+    }
+
   function db_close() {
     $mysqli= $this->db_mysqliect();
     mysqli_close($mysqli);
