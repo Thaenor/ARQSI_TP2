@@ -6,7 +6,7 @@ var username;
 
 function compileCatalog(json, username){
   for(var x=0; x<json.Catalog.length; x++){
-    catalog.push( new product(json.Catalog.Name[x], json.Catalog.price[x], json.Catalog.quantity[x], json.Catalog.discount[x]) );
+    catalog.push( new product(json.Catalog[x].Name, json.Catalog[x].price, json.Catalog[x].quantity, json.Catalog[x].discount) );
     console.log(catalog[x]);
   }
 

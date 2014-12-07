@@ -100,3 +100,10 @@ function createCookie(name, value, days) {
   }
   document.cookie = name+"="+value+expires+"; path=/";
 }
+
+/******************************************************************************/
+
+function logout(){
+  //coockie.destroy();
+  //resto da logica
+}
