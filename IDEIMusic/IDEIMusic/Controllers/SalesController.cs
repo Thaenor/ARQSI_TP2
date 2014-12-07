@@ -29,6 +29,14 @@ namespace IDEIMusic.Controllers
         // GET: Sales
         public ActionResult Index()
         {
+            List<SaleSummary> sales = repo.GetSaleSummaries().ToList();
+            float totalIncome = 0;
+            foreach(SaleSummary s in sales)
+            {
+                totalIncome += s.Income;
+            }
+
+            ViewData["total"] = totalIncome;
             ViewData["summaries"] = repo.GetSaleSummaries();
             return View(ViewData);
         }

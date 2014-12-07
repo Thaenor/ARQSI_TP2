@@ -3,6 +3,8 @@
 }
 <h2>Record of Sales</h2>
 
+<h3>Total Income: @ViewData["total"] €</h3>
+
 <table class="table">
     <tr>
         <th>
@@ -33,7 +35,7 @@
             @Html.DisplayFor(modelItem => item.Quantity)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Income)
+            @Html.DisplayFor(modelItem => item.Income) €
         </td>
     </tr>
     }
