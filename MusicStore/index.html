@@ -28,8 +28,9 @@
 
         <div id="loginWidget" class="widget">
             <h2>Log in/Register</h2>
-            <div class="inner">
-                <form name="loginform" action="#" method="get">
+            <div id="loginer" class="inner">
+              <p id="welcome" id="welcome"></p>
+                <form id="loginform" name="loginform" action="#" method="get">
                     <ul id="login">
                         <li>
                             Username: <br/>
@@ -49,6 +50,8 @@
                 </form>
             </div>
         </div>
+        <br>
+        <input id="logoutbutt" type="button" value="logout" onclick="logout()" style="visibility:hidden">
 
         <div id="RegisterWidget" class="widget" style="visibility: hidden">
             <h2>Register</h2>

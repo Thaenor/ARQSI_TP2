@@ -74,14 +74,17 @@ function stateHandler()
         }else {
             var json = JSON.parse(doctext);
             createCookie("username",json.User.Name, 1);
-            compileCatalog(json);
-            var container = document.getElementById('loginWidget');
+            //compileCatalog(json);
+
+            var container = document.getElementById('welcome');
             container.innerHTML="welcome "+json.User.Name+"!";
-            container.innerHTML+="<hr>";
-            container.innerHTML+="<button id='logout' value='logout' onclick='logout()'>"
+            var cont = document.getElementById('loginform');
+            cont.style.visibility="hidden";
+            var ele = document.getElementById('logoutbutt');
+            ele.style.visibility = "visible";
             /*container.innerHTML+='<br/><input type="button" value="view cart" onclick="viewCart()">';
             container.innerHTML+='<br/><div id="CartSpace" style="visibility: hidden"></div>';*/
-            printCatalog(json, json.User.Name);
+            //printCatalog(json, json.User.Name);
         }
 
     }
@@ -121,5 +124,10 @@ function eraseCookie(name) {
 
 function logout(){
   eraseCookie('username');
-    
+  var ele = document.getElementById('logoutbutt');
+  ele.style.visibility = "hidden";
+  var cont = document.getElementById('loginform');
+  cont.style.visibility="visible";
+  var cont = document.getElementById('welcome');
+  cont.style.visibility="hidden"; 
 }
