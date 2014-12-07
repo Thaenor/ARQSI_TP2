@@ -78,6 +78,7 @@ function stateHandler()
 
             var container = document.getElementById('welcome');
             container.innerHTML="welcome "+json.User.Name+"!";
+            container.style.visibility='visibile';
             var cont = document.getElementById('loginform');
             cont.style.visibility="hidden";
             var ele = document.getElementById('logoutbutt');
@@ -134,7 +135,7 @@ function logout(){
 
 function refresh()
 {
-  alert('welcome'+readCookie('username'));
+  //alert('welcome'+readCookie('username'));
   if(readCookie('username')){
     var container = document.getElementById('welcome');
     container.innerHTML="welcome "+readCookie('username')+"!";
