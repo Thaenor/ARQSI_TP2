@@ -1,125 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
 <artist>
-  <name>FKA twigs</name>
-          <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
-            <bandmembers>
-                    <member>
-                <name>Tahliah Debrett Barnett</name>
-                                            </member>
-            </bandmembers>
-        <url>http://www.last.fm/music/FKA+twigs</url>
-  <image size="small">http://userserve-ak.last.fm/serve/34/100399249.png</image>
-  <image size="medium">http://userserve-ak.last.fm/serve/64/100399249.png</image>
-  <image size="large">http://userserve-ak.last.fm/serve/126/100399249.png</image>
-  <image size="extralarge">http://userserve-ak.last.fm/serve/252/100399249.png</image>
-  <image size="mega">http://userserve-ak.last.fm/serve/_/100399249/FKA+twigs.png</image>
+  <name>Hozier</name>
+          <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
+            <url>http://www.last.fm/music/Hozier</url>
+  <image size="small">http://userserve-ak.last.fm/serve/34/100322333.png</image>
+  <image size="medium">http://userserve-ak.last.fm/serve/64/100322333.png</image>
+  <image size="large">http://userserve-ak.last.fm/serve/126/100322333.png</image>
+  <image size="extralarge">http://userserve-ak.last.fm/serve/252/100322333.png</image>
+  <image size="mega">http://userserve-ak.last.fm/serve/500/100322333/Hozier+PNG.png</image>
   <streamable>0</streamable>
   <ontour>1</ontour>
   <stats>
-    <listeners>192054</listeners>
-    <playcount>4692257</playcount>
+    <listeners>262902</listeners>
+    <playcount>3325583</playcount>
       </stats>
 
   <similar>
 	    <artist>
-	  <name>Banks</name>
-	  <url>http://www.last.fm/music/Banks</url>
-	  <image size="small">http://userserve-ak.last.fm/serve/34/100486629.png</image>
-	  <image size="medium">http://userserve-ak.last.fm/serve/64/100486629.png</image>
-	  <image size="large">http://userserve-ak.last.fm/serve/126/100486629.png</image>
-	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/100486629.png</image>
-	  <image size="mega">http://userserve-ak.last.fm/serve/_/100486629/Banks+PNG.png</image>
+	  <name>Lo-Fang</name>
+	  <url>http://www.last.fm/music/Lo-Fang</url>
+	  <image size="small">http://userserve-ak.last.fm/serve/34/100654167.png</image>
+	  <image size="medium">http://userserve-ak.last.fm/serve/64/100654167.png</image>
+	  <image size="large">http://userserve-ak.last.fm/serve/126/100654167.png</image>
+	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/100654167.png</image>
+	  <image size="mega">http://userserve-ak.last.fm/serve/_/100654167/LoFang.png</image>
 	  
 	        	</artist>
     <artist>
-	  <name>Arca</name>
-	  <url>http://www.last.fm/music/Arca</url>
-	  <image size="small">http://userserve-ak.last.fm/serve/34/102249953.jpg</image>
-	  <image size="medium">http://userserve-ak.last.fm/serve/64/102249953.jpg</image>
-	  <image size="large">http://userserve-ak.last.fm/serve/126/102249953.jpg</image>
-	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/102249953.jpg</image>
-	  <image size="mega">http://userserve-ak.last.fm/serve/500/102249953/Arca++for+Dazed.jpg</image>
+	  <name>Rhodes</name>
+	  <url>http://www.last.fm/music/Rhodes</url>
+	  <image size="small">http://userserve-ak.last.fm/serve/34/94217463.jpg</image>
+	  <image size="medium">http://userserve-ak.last.fm/serve/64/94217463.jpg</image>
+	  <image size="large">http://userserve-ak.last.fm/serve/126/94217463.jpg</image>
+	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/94217463.jpg</image>
+	  <image size="mega">http://userserve-ak.last.fm/serve/500/94217463/Rhodes+website_+RAISE+YOUR+LOVE.jpg</image>
 	  
 	        	</artist>
     <artist>
-	  <name>Azealia Banks</name>
-	  <url>http://www.last.fm/music/Azealia+Banks</url>
-	  <image size="small">http://userserve-ak.last.fm/serve/34/81085673.png</image>
-	  <image size="medium">http://userserve-ak.last.fm/serve/64/81085673.png</image>
-	  <image size="large">http://userserve-ak.last.fm/serve/126/81085673.png</image>
-	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/81085673.png</image>
-	  <image size="mega">http://userserve-ak.last.fm/serve/_/81085673/Azealia+Banks+spins.png</image>
+	  <name>Ella Eyre</name>
+	  <url>http://www.last.fm/music/Ella+Eyre</url>
+	  <image size="small">http://userserve-ak.last.fm/serve/34/99984761.png</image>
+	  <image size="medium">http://userserve-ak.last.fm/serve/64/99984761.png</image>
+	  <image size="large">http://userserve-ak.last.fm/serve/126/99984761.png</image>
+	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/99984761.png</image>
+	  <image size="mega">http://userserve-ak.last.fm/serve/_/99984761/Ella+Eyre.png</image>
 	  
 	        	</artist>
     <artist>
-	  <name>Jessie Ware</name>
-	  <url>http://www.last.fm/music/Jessie+Ware</url>
-	  <image size="small">http://userserve-ak.last.fm/serve/34/99546455.png</image>
-	  <image size="medium">http://userserve-ak.last.fm/serve/64/99546455.png</image>
-	  <image size="large">http://userserve-ak.last.fm/serve/126/99546455.png</image>
-	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/99546455.png</image>
-	  <image size="mega">http://userserve-ak.last.fm/serve/500/99546455/Jessie+Ware+PNG.png</image>
+	  <name>Benjamin Booker</name>
+	  <url>http://www.last.fm/music/Benjamin+Booker</url>
+	  <image size="small">http://userserve-ak.last.fm/serve/34/100630945.jpg</image>
+	  <image size="medium">http://userserve-ak.last.fm/serve/64/100630945.jpg</image>
+	  <image size="large">http://userserve-ak.last.fm/serve/126/100630945.jpg</image>
+	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/100630945.jpg</image>
+	  <image size="mega">http://userserve-ak.last.fm/serve/500/100630945/Benjamin+Booker+BenB_42.jpg</image>
 	  
 	        	</artist>
     <artist>
-	  <name>Tinashe</name>
-	  <url>http://www.last.fm/music/Tinashe</url>
-	  <image size="small">http://userserve-ak.last.fm/serve/34/101400575.png</image>
-	  <image size="medium">http://userserve-ak.last.fm/serve/64/101400575.png</image>
-	  <image size="large">http://userserve-ak.last.fm/serve/126/101400575.png</image>
-	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/101400575.png</image>
-	  <image size="mega">http://userserve-ak.last.fm/serve/500/101400575/Tinashe.png</image>
+	  <name>Sivu</name>
+	  <url>http://www.last.fm/music/Sivu</url>
+	  <image size="small">http://userserve-ak.last.fm/serve/34/82515991.jpg</image>
+	  <image size="medium">http://userserve-ak.last.fm/serve/64/82515991.jpg</image>
+	  <image size="large">http://userserve-ak.last.fm/serve/126/82515991.jpg</image>
+	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/82515991.jpg</image>
+	  <image size="mega">http://userserve-ak.last.fm/serve/_/82515991/Sivu+avatars000022447129a0skcfcrop.jpg</image>
 	  
 	        	</artist>
   </similar>
     <tags>
         <tag>
-	  <name>trip-hop</name>
-	  <url>http://www.last.fm/tag/trip-hop</url>
+	  <name>blues</name>
+	  <url>http://www.last.fm/tag/blues</url>
 	</tag>
         <tag>
-	  <name>electronic</name>
-	  <url>http://www.last.fm/tag/electronic</url>
+	  <name>soul</name>
+	  <url>http://www.last.fm/tag/soul</url>
 	</tag>
         <tag>
-	  <name>dream pop</name>
-	  <url>http://www.last.fm/tag/dream%20pop</url>
+	  <name>indie</name>
+	  <url>http://www.last.fm/tag/indie</url>
 	</tag>
         <tag>
-	  <name>experimental</name>
-	  <url>http://www.last.fm/tag/experimental</url>
+	  <name>irish</name>
+	  <url>http://www.last.fm/tag/irish</url>
 	</tag>
         <tag>
-	  <name>art pop</name>
-	  <url>http://www.last.fm/tag/art%20pop</url>
+	  <name>singer-songwriter</name>
+	  <url>http://www.last.fm/tag/singer-songwriter</url>
 	</tag>
       </tags>
       <bio>
         <links>
-        <link rel="original" href="http://www.last.fm/music/FKA+twigs/+wiki"/>
+        <link rel="original" href="http://www.last.fm/music/Hozier/+wiki"/>
     </links>
-                                    <published>Sun, 21 Sep 2014 09:08:29 +0000</published>
+                                    <published>Tue, 7 Oct 2014 13:31:55 +0000</published>
     <summary>
-        <![CDATA[        FKA twigs is a pseudonym of singer / songwriter / producer / dancer <span title="Unknown artist" class="bbcode_unknown">Tahliah Debrett Barnett</span> (b. 16 Jan 1988 in Gloucestershire, United Kingdom - formerly known as <a href="http://www.last.fm/music/Twigs" class="bbcode_artist">Twigs</a>). Named after the way her bones pop and crack; the part-Jamaican, part-Spanish singer now based in London released a 4 track <a title="Twigs - EP" href="http://www.last.fm/music/Twigs/EP" class="bbcode_album">EP</a> in December 2012, accompanied by their respective <a href="http://twigsep1.com/" rel="nofollow">promo videos</a>.  &quot;<a title="FKA twigs &ndash; How's That" href="http://www.last.fm/music/FKA+twigs/_/How%27s+That" class="bbcode_track">How's That</a>&quot;, produced and written with <a href="http://www.last.fm/music/Arca" class="bbcode_artist">Arca</a>, surfaced in May 2013. The single &quot;<a title="FKA twigs &ndash; Water Me" href="http://www.last.fm/music/FKA+twigs/_/Water+Me" class="bbcode_track">Water Me</a>&quot;, was released in August.
+        <![CDATA[        Born on St. Patrick's Day and hailing from County Wicklow, Hozier was raised on the building blocks of popular music: rhythm and blues, soul, jazz and the deep dark stuff stretching from Chicago to the Delta. He joined his first band when he was 15 years old, fronting a soul band with some older heads. He taught himself to play guitar and piano, and went to Trinity College to study music. Whilst there, he bagged a seat on the flight deck of the symphonic B-52 that is the Trinity Orchestra, fronting their missions into the world of classic rock.  
 
-        <a href="http://www.last.fm/music/FKA+twigs">Read more about FKA twigs on Last.fm</a>.
+        <a href="http://www.last.fm/music/Hozier">Read more about Hozier on Last.fm</a>.
     ]]>
     </summary>
     <content>
-            <![CDATA[        FKA twigs is a pseudonym of singer / songwriter / producer / dancer <span title="Unknown artist" class="bbcode_unknown">Tahliah Debrett Barnett</span> (b. 16 Jan 1988 in Gloucestershire, United Kingdom - formerly known as <a href="http://www.last.fm/music/Twigs" class="bbcode_artist">Twigs</a>). Named after the way her bones pop and crack; the part-Jamaican, part-Spanish singer now based in London released a 4 track <a title="Twigs - EP" href="http://www.last.fm/music/Twigs/EP" class="bbcode_album">EP</a> in December 2012, accompanied by their respective <a href="http://twigsep1.com/" rel="nofollow">promo videos</a>.  &quot;<a title="FKA twigs &ndash; How's That" href="http://www.last.fm/music/FKA+twigs/_/How%27s+That" class="bbcode_track">How's That</a>&quot;, produced and written with <a href="http://www.last.fm/music/Arca" class="bbcode_artist">Arca</a>, surfaced in May 2013. The single &quot;<a title="FKA twigs &ndash; Water Me" href="http://www.last.fm/music/FKA+twigs/_/Water+Me" class="bbcode_track">Water Me</a>&quot;, was released in August.
+            <![CDATA[        Born on St. Patrick's Day and hailing from County Wicklow, Hozier was raised on the building blocks of popular music: rhythm and blues, soul, jazz and the deep dark stuff stretching from Chicago to the Delta. He joined his first band when he was 15 years old, fronting a soul band with some older heads. He taught himself to play guitar and piano, and went to Trinity College to study music. Whilst there, he bagged a seat on the flight deck of the symphonic B-52 that is the Trinity Orchestra, fronting their missions into the world of classic rock.  
 
-        <a href="http://www.last.fm/music/FKA+twigs">Read more about FKA twigs on Last.fm</a>.
+        <a href="http://www.last.fm/music/Hozier">Read more about Hozier on Last.fm</a>.
     
     
 User-contributed text is available under the Creative Commons By-SA License and may also be available under the GNU FDL.]]>
     </content>
-            <placeformed>Gloucestershire, United Kingdom</placeformed>                        <yearformed>2012</yearformed>
-            <formationlist>
-                    <formation>
-                <yearfrom>2012</yearfrom>
-                <yearto/>
-            </formation>
-            </formationlist>
-      </bio>
+                  </bio>
   </artist></lfm>

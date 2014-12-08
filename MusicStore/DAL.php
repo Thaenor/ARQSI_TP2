@@ -157,7 +157,7 @@ class DAL {
     $mysqli = $this-> db_mysqliconn();
 
     // por precaucao pede-se para criar a tabela CASO(SE) esta nao exista
-    $recordset = $mysqli->query($this->CREATE_ITEMSALE_TABLE_SCRIPT);
+    $recordset = $mysqli->query($this->CREATE_USERS_TABLE_SCRIPT);
 
     if($recordset) {} else
     {
@@ -180,7 +180,7 @@ class DAL {
     $mysqli = $this-> db_mysqliconn();
 
     // por precaucao pede-se para criar a tabela CASO(SE) esta nao exista
-    $recordset = $mysqli->query($this->CREATE_ITEMSALE_TABLE_SCRIPT);
+    $recordset = $mysqli->query($this->CREATE_USERS_TABLE_SCRIPT);
 
     if($recordset) {} else
     {

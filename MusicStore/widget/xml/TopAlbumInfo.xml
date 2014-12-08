@@ -1,5 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
-<topalbums artist="FKA twigs" page="1" perPage="50" totalPages="1" total="3">
+<topalbums artist="Hozier" page="1" perPage="50" totalPages="1" total="4">
 
-    </topalbums></lfm>
+                        <album rank="1">
+    <name>Take Me to Church EP</name>
+            <playcount>321471</playcount>
+                <mbid/>
+                <url>http://www.last.fm/music/Hozier/Take+Me+to+Church+EP</url>
+        <artist>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
+            <url>http://www.last.fm/music/Hozier</url>
+                    </artist>
+        <image size="small">http://userserve-ak.last.fm/serve/34s/95104247.jpg</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/95104247.jpg</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/95104247.jpg</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/95104247.jpg</image>
+</album>                    <album rank="2">
+    <name>From Eden EP</name>
+            <playcount>281204</playcount>
+                <mbid/>
+                <url>http://www.last.fm/music/Hozier/From+Eden+EP</url>
+        <artist>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
+            <url>http://www.last.fm/music/Hozier</url>
+                    </artist>
+        <image size="small">http://userserve-ak.last.fm/serve/34s/101754185.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101754185.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101754185.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101754185.png</image>
+</album></topalbums></lfm>

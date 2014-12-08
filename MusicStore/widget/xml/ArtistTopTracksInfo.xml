@@ -1,927 +1,923 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
-<toptracks artist="FKA twigs" page="1" perPage="50" totalPages="18" total="889">
+<toptracks artist="Hozier" page="1" perPage="50" totalPages="15" total="749">
 
                         <track rank="1">
-    <name>Two Weeks</name>
-    <duration>249</duration>
-            <playcount>743958</playcount>
-                <listeners>115023</listeners>
+    <name>Take Me to Church</name>
+    <duration>241</duration>
+            <playcount>996719</playcount>
+                <listeners>172829</listeners>
     
-            <mbid>54cfeebe-2527-4093-a520-8314a74bb5f3</mbid>
+            <mbid>aea293c2-ffb9-4a63-be64-0e04853849de</mbid>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Two+Weeks</url>
+    <url>http://www.last.fm/music/Hozier/_/Take+Me+to+Church</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100237569.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100237569.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100237569.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100237569.png</image>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
         </track>                    <track rank="2">
-    <name>Pendulum</name>
-    <duration>339</duration>
-            <playcount>359081</playcount>
-                <listeners>72998</listeners>
+    <name>From Eden</name>
+    <duration>222</duration>
+            <playcount>212144</playcount>
+                <listeners>59714</listeners>
     
-            <mbid>85a4e75c-dbe2-4b47-94ab-0b25cc63fe72</mbid>
+            <mbid>1ef6a6d8-41de-4aae-b400-5e23690aaf96</mbid>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Pendulum</url>
+    <url>http://www.last.fm/music/Hozier/_/From+Eden</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100237569.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100237569.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100237569.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100237569.png</image>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
         </track>                    <track rank="3">
-    <name>Lights On</name>
-    <duration>266</duration>
-            <playcount>312037</playcount>
-                <listeners>66286</listeners>
-    
-            <mbid>cecfd3c2-bf64-4c0a-81b3-4d051fe10ffc</mbid>
-         
-    
-    <url>http://www.last.fm/music/FKA+twigs/_/Lights+On</url>
-    <streamable fulltrack="0">0</streamable>
-            <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
-     
-        <url>http://www.last.fm/music/FKA+twigs</url>
-    </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100237569.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100237569.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100237569.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100237569.png</image>
-        </track>                    <track rank="4">
-    <name>Preface</name>
-    <duration>108</duration>
-            <playcount>257924</playcount>
-                <listeners>65994</listeners>
-    
-            <mbid>73c3fdd2-e07b-4351-9420-0ec3a1ece068</mbid>
-         
-    
-    <url>http://www.last.fm/music/FKA+twigs/_/Preface</url>
-    <streamable fulltrack="0">0</streamable>
-            <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
-     
-        <url>http://www.last.fm/music/FKA+twigs</url>
-    </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100237569.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100237569.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100237569.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100237569.png</image>
-        </track>                    <track rank="5">
-    <name>Hours</name>
-    <duration>277</duration>
-            <playcount>269093</playcount>
-                <listeners>59052</listeners>
-    
-            <mbid>c7599930-a2a7-4c04-a40d-ecee4066eb19</mbid>
-         
-    
-    <url>http://www.last.fm/music/FKA+twigs/_/Hours</url>
-    <streamable fulltrack="0">0</streamable>
-            <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
-     
-        <url>http://www.last.fm/music/FKA+twigs</url>
-    </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100237569.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100237569.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100237569.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100237569.png</image>
-        </track>                    <track rank="6">
-    <name>Video Girl</name>
+    <name>Work Song</name>
     <duration>229</duration>
-            <playcount>306982</playcount>
-                <listeners>58514</listeners>
+            <playcount>169572</playcount>
+                <listeners>43821</listeners>
     
-            <mbid>5529b2a1-16e0-42c3-ad6b-021c493e4d5d</mbid>
+            <mbid>880fd269-7209-4b26-9c3f-87de7173ebb2</mbid>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Video+Girl</url>
+    <url>http://www.last.fm/music/Hozier/_/Work+Song</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100237569.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100237569.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100237569.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100237569.png</image>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
+        </track>                    <track rank="4">
+    <name>Like Real People Do</name>
+    <duration>197</duration>
+            <playcount>124092</playcount>
+                <listeners>35300</listeners>
+    
+            <mbid>5b6e8941-59e1-4176-aefc-ec527afde085</mbid>
+         
+    
+    <url>http://www.last.fm/music/Hozier/_/Like+Real+People+Do</url>
+    <streamable fulltrack="0">0</streamable>
+            <artist>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
+     
+        <url>http://www.last.fm/music/Hozier</url>
+    </artist>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
+        </track>                    <track rank="5">
+    <name>Sedated</name>
+    <duration>205</duration>
+            <playcount>120264</playcount>
+                <listeners>31462</listeners>
+    
+            <mbid>d05f6717-9e8e-4c6b-acf7-152d6a072d85</mbid>
+         
+    
+    <url>http://www.last.fm/music/Hozier/_/Sedated</url>
+    <streamable fulltrack="0">0</streamable>
+            <artist>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
+     
+        <url>http://www.last.fm/music/Hozier</url>
+    </artist>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
+        </track>                    <track rank="6">
+    <name>Someone New</name>
+    <duration>222</duration>
+            <playcount>85517</playcount>
+                <listeners>26543</listeners>
+    
+            <mbid>31f919e9-acbf-42ec-bf3e-d4a78b29a205</mbid>
+         
+    
+    <url>http://www.last.fm/music/Hozier/_/Someone+New</url>
+    <streamable fulltrack="0">0</streamable>
+            <artist>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
+     
+        <url>http://www.last.fm/music/Hozier</url>
+    </artist>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
         </track>                    <track rank="7">
-    <name>Closer</name>
-    <duration>227</duration>
-            <playcount>219946</playcount>
-                <listeners>49666</listeners>
+    <name>Jackie and Wilson</name>
+    <duration>223</duration>
+            <playcount>89151</playcount>
+                <listeners>26017</listeners>
     
-            <mbid>fe78b968-593f-47d7-aa81-1cc0dcf7c1d3</mbid>
+            <mbid>10ca00e2-4132-411b-87cb-401165cecac6</mbid>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Closer</url>
+    <url>http://www.last.fm/music/Hozier/_/Jackie+and+Wilson</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100237569.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100237569.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100237569.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100237569.png</image>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
         </track>                    <track rank="8">
-    <name>Numbers</name>
-    <duration>225</duration>
-            <playcount>222079</playcount>
-                <listeners>49445</listeners>
+    <name>To Be Alone</name>
+    <duration>311</duration>
+            <playcount>72425</playcount>
+                <listeners>24682</listeners>
     
-            <mbid>86e43fd1-6362-41bb-b373-89db0c3f2ae3</mbid>
+            <mbid>73957ec2-07f5-40f4-bfc2-3a8e381bacf6</mbid>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Numbers</url>
+    <url>http://www.last.fm/music/Hozier/_/To+Be+Alone</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100237569.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100237569.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100237569.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100237569.png</image>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
         </track>                    <track rank="9">
-    <name>Give Up</name>
-    <duration>257</duration>
-            <playcount>250301</playcount>
-                <listeners>48415</listeners>
+    <name>Angel Of Small Death &amp; The Codeine Scene</name>
+    <duration>219</duration>
+            <playcount>78923</playcount>
+                <listeners>22269</listeners>
     
-            <mbid>620edc19-b196-4256-8b07-5501af167592</mbid>
+            <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Give+Up</url>
+    <url>http://www.last.fm/music/Hozier/_/Angel+Of+Small+Death+&amp;+The+Codeine+Scene</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100237569.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100237569.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100237569.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100237569.png</image>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/93413763.jpg</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/93413763.jpg</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/93413763.jpg</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/93413763.jpg</image>
         </track>                    <track rank="10">
-    <name>Water Me</name>
-    <duration>204</duration>
-            <playcount>183639</playcount>
-                <listeners>46403</listeners>
+    <name>Arsonist's Lullabye</name>
+    <duration>266</duration>
+            <playcount>75538</playcount>
+                <listeners>20743</listeners>
     
-            <mbid>34df3331-8934-4bbf-b108-6c671bc36be2</mbid>
+            <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Water+Me</url>
+    <url>http://www.last.fm/music/Hozier/_/Arsonist%27s+Lullabye</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/92248399.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/92248399.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/92248399.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/92248399.png</image>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101754185.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101754185.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101754185.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101754185.png</image>
         </track>                    <track rank="11">
-    <name>Kicks</name>
-    <duration>326</duration>
-            <playcount>208833</playcount>
-                <listeners>44143</listeners>
+    <name>Angel of Small Death and the Codeine Scene</name>
+    <duration>219</duration>
+            <playcount>72067</playcount>
+                <listeners>19750</listeners>
     
-            <mbid>774ac730-b11d-4dac-b167-67277bb5d2fa</mbid>
+            <mbid>92b96760-c826-45f0-8613-362c83604a81</mbid>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Kicks</url>
+    <url>http://www.last.fm/music/Hozier/_/Angel+of+Small+Death+and+the+Codeine+Scene</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100237569.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100237569.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100237569.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100237569.png</image>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
         </track>                    <track rank="12">
-    <name>Papi Pacify</name>
-    <duration>312</duration>
-            <playcount>153831</playcount>
-                <listeners>35746</listeners>
+    <name>It Will Come Back</name>
+    <duration>275</duration>
+            <playcount>49424</playcount>
+                <listeners>18413</listeners>
     
-            <mbid>f2d7b5f7-cdbc-4aec-90f9-a3184b56cd7d</mbid>
+            <mbid>6b6e0617-dcbe-4a5e-8245-59b8c8e64827</mbid>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Papi+Pacify</url>
+    <url>http://www.last.fm/music/Hozier/_/It+Will+Come+Back</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/92248399.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/92248399.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/92248399.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/92248399.png</image>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
         </track>                    <track rank="13">
-    <name>How's That</name>
-    <duration>283</duration>
-            <playcount>113277</playcount>
-                <listeners>28494</listeners>
+    <name>Cherry Wine (Live)</name>
+    <duration>239</duration>
+            <playcount>51712</playcount>
+                <listeners>17632</listeners>
     
-            <mbid>10c09bd9-2d03-4713-91fb-64b9b44abfa8</mbid>
+            <mbid>4bedee94-3ef7-483c-a698-b33fbab05478</mbid>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/How%27s+That</url>
+    <url>http://www.last.fm/music/Hozier/_/Cherry+Wine+(Live)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/92248399.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/92248399.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/92248399.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/92248399.png</image>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
         </track>                    <track rank="14">
-    <name>Ultraviolet</name>
-    <duration>187</duration>
-            <playcount>96167</playcount>
-                <listeners>23097</listeners>
+    <name>Cherry Wine - Live</name>
+    <duration>240</duration>
+            <playcount>43763</playcount>
+                <listeners>17259</listeners>
     
-            <mbid>31b3f310-54b9-415d-aeaf-1bcff0df2407</mbid>
+            <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Ultraviolet</url>
+    <url>http://www.last.fm/music/Hozier/_/Cherry+Wine+-+Live</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/92248399.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/92248399.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/92248399.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/92248399.png</image>
-        </track>                    <track rank="15">
-    <name>Hide</name>
-    <duration>179</duration>
-            <playcount>41334</playcount>
-                <listeners>6730</listeners>
+                </track>                    <track rank="15">
+    <name>cherry wine</name>
+    <duration>239</duration>
+            <playcount>44255</playcount>
+                <listeners>17165</listeners>
     
-            <mbid>2c2e0aa7-b6dc-424f-bd67-3244db6136cf</mbid>
+            <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Hide</url>
+    <url>http://www.last.fm/music/Hozier/_/cherry+wine</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100566761.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100566761.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100566761.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100566761.png</image>
-        </track>                    <track rank="16">
-    <name>Ache</name>
-    <duration>290</duration>
-            <playcount>36778</playcount>
-                <listeners>6248</listeners>
+                </track>                    <track rank="16">
+    <name>Foreigner's God</name>
+    <duration>225</duration>
+            <playcount>42694</playcount>
+                <listeners>14780</listeners>
     
-            <mbid>b859d1fe-4d5e-4a9c-b823-c49ad373c18b</mbid>
+            <mbid>c0b0c305-d05c-423a-8389-099f09232757</mbid>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Ache</url>
+    <url>http://www.last.fm/music/Hozier/_/Foreigner%27s+God</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100566761.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100566761.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100566761.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100566761.png</image>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
         </track>                    <track rank="17">
-    <name>Weak Spot</name>
-    <duration>214</duration>
-            <playcount>30135</playcount>
-                <listeners>5892</listeners>
-    
-            <mbid>676965f5-0c69-411f-b605-f94909adfa6d</mbid>
-         
-    
-    <url>http://www.last.fm/music/FKA+twigs/_/Weak+Spot</url>
-    <streamable fulltrack="0">0</streamable>
-            <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
-     
-        <url>http://www.last.fm/music/FKA+twigs</url>
-    </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100566761.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100566761.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100566761.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100566761.png</image>
-        </track>                    <track rank="18">
-    <name>Breathe</name>
-    <duration>257</duration>
-            <playcount>29837</playcount>
-                <listeners>5573</listeners>
-    
-            <mbid>1b764c32-6095-45dd-ae03-23dcd7671df7</mbid>
-         
-    
-    <url>http://www.last.fm/music/FKA+twigs/_/Breathe</url>
-    <streamable fulltrack="0">0</streamable>
-            <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
-     
-        <url>http://www.last.fm/music/FKA+twigs</url>
-    </artist>
-                <image size="small">http://userserve-ak.last.fm/serve/34s/100566761.png</image>
-    <image size="medium">http://userserve-ak.last.fm/serve/64s/100566761.png</image>
-    <image size="large">http://userserve-ak.last.fm/serve/126/100566761.png</image>
-    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100566761.png</image>
-        </track>                    <track rank="19">
-    <name>tw-ache</name>
-    <duration>257</duration>
-            <playcount>3523</playcount>
-                <listeners>836</listeners>
+    <name>In A Week</name>
+    <duration>40</duration>
+            <playcount>30579</playcount>
+                <listeners>13143</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/tw-ache</url>
+    <url>http://www.last.fm/music/Hozier/_/In+A+Week</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                </track>                    <track rank="20">
-    <name>Wet Wipez</name>
-    <duration>261</duration>
-            <playcount>2191</playcount>
-                <listeners>705</listeners>
+                </track>                    <track rank="18">
+    <name>To Be Alone - Live</name>
+    <duration>311</duration>
+            <playcount>26537</playcount>
+                <listeners>9515</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Wet+Wipez</url>
+    <url>http://www.last.fm/music/Hozier/_/To+Be+Alone+-+Live</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                </track>                    <track rank="21">
-    <name>Girl</name>
-    <duration/>
-            <playcount>1071</playcount>
-                <listeners>575</listeners>
+                </track>                    <track rank="19">
+    <name>In The Woods Somewhere</name>
+    <duration>331</duration>
+            <playcount>25445</playcount>
+                <listeners>8575</listeners>
+    
+            <mbid>011e1b96-ba05-4dd3-a15d-8300936382ad</mbid>
+         
+    
+    <url>http://www.last.fm/music/Hozier/_/In+The+Woods+Somewhere</url>
+    <streamable fulltrack="0">0</streamable>
+            <artist>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
+     
+        <url>http://www.last.fm/music/Hozier</url>
+    </artist>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
+        </track>                    <track rank="20">
+    <name>Run</name>
+    <duration>254</duration>
+            <playcount>26637</playcount>
+                <listeners>8358</listeners>
+    
+            <mbid>24acf045-5ee9-419f-8853-62acaac22b14</mbid>
+         
+    
+    <url>http://www.last.fm/music/Hozier/_/Run</url>
+    <streamable fulltrack="0">0</streamable>
+            <artist>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
+     
+        <url>http://www.last.fm/music/Hozier</url>
+    </artist>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101688719.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101688719.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101688719.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101688719.png</image>
+        </track>                    <track rank="21">
+    <name>My Love Will Never Die</name>
+    <duration>235</duration>
+            <playcount>20606</playcount>
+                <listeners>7347</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Girl</url>
+    <url>http://www.last.fm/music/Hozier/_/My+Love+Will+Never+Die</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="22">
-    <name>One Time</name>
-    <duration>257</duration>
-            <playcount>3862</playcount>
-                <listeners>398</listeners>
+    <name>Take Me to Church - Live From Spotify London</name>
+    <duration>246</duration>
+            <playcount>14326</playcount>
+                <listeners>6942</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/One+Time</url>
+    <url>http://www.last.fm/music/Hozier/_/Take+Me+to+Church+-+Live+From+Spotify+London</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="23">
-    <name>FKA x inc.</name>
-    <duration>236</duration>
-            <playcount>4073</playcount>
-                <listeners>385</listeners>
+    <name>Like Real People Do - Live Version</name>
+    <duration>231</duration>
+            <playcount>13148</playcount>
+                <listeners>6130</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/FKA+x+inc.</url>
+    <url>http://www.last.fm/music/Hozier/_/Like+Real+People+Do+-+Live+Version</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="24">
-    <name>How`s That</name>
-    <duration/>
-            <playcount>1163</playcount>
-                <listeners>336</listeners>
+    <name>In A Week (feat. Karen Cowley)</name>
+    <duration>333</duration>
+            <playcount>15894</playcount>
+                <listeners>3878</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/How%60s+That</url>
+    <url>http://www.last.fm/music/Hozier/_/In+A+Week+(feat.+Karen+Cowley)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="25">
-    <name>Ache (2 of 4)</name>
-    <duration>290</duration>
-            <playcount>947</playcount>
-                <listeners>313</listeners>
+    <name>Work Song - Live Version</name>
+    <duration>234</duration>
+            <playcount>7406</playcount>
+                <listeners>3847</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Ache+(2+of+4)</url>
+    <url>http://www.last.fm/music/Hozier/_/Work+Song+-+Live+Version</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="26">
-    <name>Stay With Me (Sam Smith cover)</name>
-    <duration/>
-            <playcount>744</playcount>
-                <listeners>307</listeners>
+    <name>Take Me To Church - Live From Spotify, London 2014</name>
+    <duration>247</duration>
+            <playcount>7879</playcount>
+                <listeners>3626</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Stay+With+Me+(Sam+Smith+cover)</url>
+    <url>http://www.last.fm/music/Hozier/_/Take+Me+To+Church+-+Live+From+Spotify,+London+2014</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="27">
-    <name>Weak Spot (1 of 4)</name>
-    <duration>214</duration>
-            <playcount>836</playcount>
-                <listeners>297</listeners>
+    <name>Someone New - Live From Spotify London</name>
+    <duration>231</duration>
+            <playcount>7298</playcount>
+                <listeners>3569</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Weak+Spot+(1+of+4)</url>
+    <url>http://www.last.fm/music/Hozier/_/Someone+New+-+Live+From+Spotify+London</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="28">
-    <name>Breathe (3 of 4)</name>
-    <duration>242</duration>
-            <playcount>810</playcount>
-                <listeners>266</listeners>
+    <name>Angel Of Small Death &amp; The Codeine Scene - Live From Spotify, London 2014</name>
+    <duration>211</duration>
+            <playcount>6770</playcount>
+                <listeners>3440</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/+noredirect/FKA+twigs/_/Breathe+(3+of+4)</url>
+    <url>http://www.last.fm/music/Hozier/_/Angel+Of+Small+Death+&amp;+The+Codeine+Scene+-+Live+From+Spotify,+London+2014</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="29">
-    <name>Ultraviolet (Insightful Fondle)</name>
-    <duration/>
-            <playcount>580</playcount>
-                <listeners>253</listeners>
+    <name>Arsonist's Lullaby</name>
+    <duration>265</duration>
+            <playcount>10900</playcount>
+                <listeners>2641</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Ultraviolet+(Insightful+Fondle)</url>
+    <url>http://www.last.fm/music/+noredirect/Hozier/_/Arsonist%27s+Lullaby</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="30">
-    <name>FKA twigs</name>
-    <duration>289</duration>
-            <playcount>381</playcount>
-                <listeners>241</listeners>
+    <name>Someone New - Live From Spotify, London 2014</name>
+    <duration>231</duration>
+            <playcount>5209</playcount>
+                <listeners>2508</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/FKA+twigs</url>
+    <url>http://www.last.fm/music/Hozier/_/Someone+New+-+Live+From+Spotify,+London+2014</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="31">
-    <name>Water Me (MAU Remix)</name>
-    <duration>276</duration>
-            <playcount>495</playcount>
-                <listeners>235</listeners>
+    <name>Cherry Wine - Live from Spotify SXSW 2014</name>
+    <duration>258</duration>
+            <playcount>4561</playcount>
+                <listeners>2386</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Water+Me+(MAU+Remix)</url>
+    <url>http://www.last.fm/music/Hozier/_/Cherry+Wine+-+Live+from+Spotify+SXSW+2014</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="32">
-    <name>Silver</name>
-    <duration>200</duration>
-            <playcount>648</playcount>
-                <listeners>223</listeners>
+    <name>In a Week - Live From Spotify London</name>
+    <duration>342</duration>
+            <playcount>4000</playcount>
+                <listeners>2285</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Silver</url>
+    <url>http://www.last.fm/music/Hozier/_/In+a+Week+-+Live+From+Spotify+London</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="33">
-    <name>Hide (4 of 4)</name>
-    <duration>30</duration>
-            <playcount>559</playcount>
-                <listeners>213</listeners>
+    <name>To Be Alone - Live from Spotify SXSW 2014</name>
+    <duration>320</duration>
+            <playcount>4056</playcount>
+                <listeners>2280</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Hide+(4+of+4)</url>
+    <url>http://www.last.fm/music/Hozier/_/To+Be+Alone+-+Live+from+Spotify+SXSW+2014</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="34">
-    <name>Two Weeks [Explicit]</name>
-    <duration>247</duration>
-            <playcount>1232</playcount>
-                <listeners>209</listeners>
+    <name>Angel of Small Death and the Codeine Scene - Live From Spotify London</name>
+    <duration>211</duration>
+            <playcount>3846</playcount>
+                <listeners>2118</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Two+Weeks+%5BExplicit%5D</url>
+    <url>http://www.last.fm/music/Hozier/_/Angel+of+Small+Death+and+the+Codeine+Scene+-+Live+From+Spotify+London</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="35">
-    <name>Water Me (China Alarm Future Screw Edit)</name>
-    <duration>247</duration>
-            <playcount>514</playcount>
-                <listeners>206</listeners>
+    <name>In A Week - Live From Spotify, London 2014</name>
+    <duration>342</duration>
+            <playcount>3241</playcount>
+                <listeners>1870</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Water+Me+(China+Alarm+Future+Screw+Edit)</url>
+    <url>http://www.last.fm/music/Hozier/_/In+A+Week+-+Live+From+Spotify,+London+2014</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="36">
-    <name>Water Me (Recovery Remix)</name>
-    <duration>213</duration>
-            <playcount>357</playcount>
-                <listeners>157</listeners>
+    <name>To Be Alone (Live)</name>
+    <duration>310</duration>
+            <playcount>6998</playcount>
+                <listeners>1720</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Water+Me+(Recovery+Remix)</url>
+    <url>http://www.last.fm/music/Hozier/_/To+Be+Alone+(Live)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
-                </track>                    <track rank="37">
-    <name>Ache (KR$CHN X MARCH REMIX)</name>
-    <duration>311</duration>
-            <playcount>377</playcount>
-                <listeners>151</listeners>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/101754185.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/101754185.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/101754185.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/101754185.png</image>
+        </track>                    <track rank="37">
+    <name>from eden (jack steadman's hallelujah edit)</name>
+    <duration/>
+            <playcount>4442</playcount>
+                <listeners>1618</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Ache+(KR$CHN+X+MARCH+REMIX)</url>
+    <url>http://www.last.fm/music/Hozier/_/from+eden+(jack+steadman%27s+hallelujah+edit)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="38">
-    <name>Water Me (CΛNS rewrk)</name>
-    <duration>180</duration>
-            <playcount>256</playcount>
-                <listeners>139</listeners>
+    <name>Take Me to Church (Album Version)</name>
+    <duration>241</duration>
+            <playcount>4062</playcount>
+                <listeners>1360</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Water+Me+(C%CE%9BNS+rewrk)</url>
+    <url>http://www.last.fm/music/Hozier/_/Take+Me+to+Church+(Album+Version)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="39">
-    <name>Stay With Me</name>
-    <duration>200</duration>
-            <playcount>550</playcount>
-                <listeners>139</listeners>
+    <name>Jackie and Wilson (Album Version)</name>
+    <duration>223</duration>
+            <playcount>2818</playcount>
+                <listeners>1016</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Stay+With+Me</url>
+    <url>http://www.last.fm/music/Hozier/_/Jackie+and+Wilson+(Album+Version)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="40">
-    <name>Two weeks (Jarreau Vandal cover ft. Ashley Röttjers)</name>
-    <duration/>
-            <playcount>244</playcount>
-                <listeners>137</listeners>
+    <name>Angel of Small Death and the Codeine Scene (Album Version)</name>
+    <duration>220</duration>
+            <playcount>2696</playcount>
+                <listeners>993</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Two+weeks+(Jarreau+Vandal+cover+ft.+Ashley+R%C3%B6ttjers)</url>
+    <url>http://www.last.fm/music/Hozier/_/Angel+of+Small+Death+and+the+Codeine+Scene+(Album+Version)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="41">
-    <name>Two Weeks - Later... with Jools Holland - BBC Two</name>
-    <duration>5</duration>
-            <playcount>180</playcount>
-                <listeners>133</listeners>
+    <name>Someone New (Album Version)</name>
+    <duration>223</duration>
+            <playcount>2473</playcount>
+                <listeners>891</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Two+Weeks+-+Later...+with+Jools+Holland+-+BBC+Two</url>
+    <url>http://www.last.fm/music/Hozier/_/Someone+New+(Album+Version)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="42">
-    <name>Hide (Your Truly Session)</name>
-    <duration/>
-            <playcount>329</playcount>
-                <listeners>130</listeners>
+    <name>Cherry Wine - Live From Greystones, Ireland / 2014</name>
+    <duration>240</duration>
+            <playcount>1602</playcount>
+                <listeners>833</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Hide+(Your+Truly+Session)</url>
+    <url>http://www.last.fm/music/Hozier/_/Cherry+Wine+-+Live+From+Greystones,+Ireland+%2F+2014</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="43">
-    <name>1. Preface</name>
-    <duration>107</duration>
-            <playcount>550</playcount>
-                <listeners>117</listeners>
+    <name>Angel Of Small Death  The Codeine Scene</name>
+    <duration>218</duration>
+            <playcount>2838</playcount>
+                <listeners>828</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/1.+Preface</url>
+    <url>http://www.last.fm/music/Hozier/_/Angel+Of+Small+Death++The+Codeine+Scene</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="44">
-    <name>Lp1 Album Review</name>
-    <duration>5</duration>
-            <playcount>119</playcount>
-                <listeners>115</listeners>
+    <name>Like Real People Do (Album Version)</name>
+    <duration>200</duration>
+            <playcount>2179</playcount>
+                <listeners>805</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Lp1+Album+Review</url>
+    <url>http://www.last.fm/music/Hozier/_/Like+Real+People+Do+(Album+Version)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="45">
-    <name>hide (yours truly session).</name>
-    <duration/>
-            <playcount>523</playcount>
-                <listeners>109</listeners>
+    <name>To Be Alone (Album Version)</name>
+    <duration>323</duration>
+            <playcount>2018</playcount>
+                <listeners>775</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/hide+(yours+truly+session).</url>
+    <url>http://www.last.fm/music/Hozier/_/To+Be+Alone+(Album+Version)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="46">
-    <name>3. Two Weeks</name>
-    <duration>248</duration>
-            <playcount>1039</playcount>
-                <listeners>103</listeners>
+    <name>From Eden (Album Version)</name>
+    <duration>284</duration>
+            <playcount>2122</playcount>
+                <listeners>772</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/3.+Two+Weeks</url>
+    <url>http://www.last.fm/music/Hozier/_/From+Eden+(Album+Version)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="47">
-    <name>2. Lights On</name>
-    <duration>264</duration>
-            <playcount>645</playcount>
-                <listeners>102</listeners>
+    <name>Angel Of Small Death</name>
+    <duration>219</duration>
+            <playcount>2076</playcount>
+                <listeners>711</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/2.+Lights+On</url>
+    <url>http://www.last.fm/music/Hozier/_/Angel+Of+Small+Death</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="48">
-    <name>Kicks (Shines Rmx)</name>
-    <duration/>
-            <playcount>138</playcount>
-                <listeners>100</listeners>
+    <name>Work Song (Album Version)</name>
+    <duration>229</duration>
+            <playcount>1761</playcount>
+                <listeners>690</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/Kicks+(Shines+Rmx)</url>
+    <url>http://www.last.fm/music/Hozier/_/Work+Song+(Album+Version)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="49">
-    <name>5. Pendulum</name>
-    <duration>299</duration>
-            <playcount>688</playcount>
-                <listeners>93</listeners>
+    <name>In a Week (Album Version)</name>
+    <duration>318</duration>
+            <playcount>1543</playcount>
+                <listeners>657</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/5.+Pendulum</url>
+    <url>http://www.last.fm/music/Hozier/_/In+a+Week+(Album+Version)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track>                    <track rank="50">
-    <name>4. Hours</name>
-    <duration>276</duration>
-            <playcount>655</playcount>
-                <listeners>92</listeners>
+    <name>Sedated (Album Version)</name>
+    <duration>207</duration>
+            <playcount>1693</playcount>
+                <listeners>651</listeners>
     
             <mbid/>
          
     
-    <url>http://www.last.fm/music/FKA+twigs/_/4.+Hours</url>
+    <url>http://www.last.fm/music/Hozier/_/Sedated+(Album+Version)</url>
     <streamable fulltrack="0">0</streamable>
             <artist>
-        <name>FKA twigs</name>
-                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+        <name>Hozier</name>
+                <mbid>b4691384-50c3-4afd-9988-51d3ec5db65d</mbid>
      
-        <url>http://www.last.fm/music/FKA+twigs</url>
+        <url>http://www.last.fm/music/Hozier</url>
     </artist>
                 </track></toptracks></lfm>

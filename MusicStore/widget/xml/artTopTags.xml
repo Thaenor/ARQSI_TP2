@@ -1,28 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
-<toptags artist="CD">
+<toptags artist="CU">
     <tag>
-    <name>trip-hop</name> 
+    <name>indie</name> 
     <count>100</count>
-    <url>http://www.last.fm/tag/trip-hop</url>
+    <url>http://www.last.fm/tag/indie</url>
 </tag>    <tag>
-    <name>Hip-Hop</name> 
-    <count>66</count>
-    <url>http://www.last.fm/tag/hip-hop</url>
+    <name>chuck norris does not approve</name> 
+    <count>100</count>
+    <url>http://www.last.fm/tag/chuck%20norris%20does%20not%20approve</url>
 </tag>    <tag>
-    <name>unsigned</name> 
-    <count>66</count>
-    <url>http://www.last.fm/tag/unsigned</url>
-</tag>    <tag>
-    <name>underground</name> 
-    <count>66</count>
-    <url>http://www.last.fm/tag/underground</url>
-</tag>    <tag>
-    <name>mistagged artist</name> 
-    <count>33</count>
-    <url>http://www.last.fm/tag/mistagged%20artist</url>
-</tag>    <tag>
-    <name>origem desconhecida</name> 
-    <count>33</count>
-    <url>http://www.last.fm/tag/origem%20desconhecida</url>
+    <name>worse than having someone shit on your face</name> 
+    <count>100</count>
+    <url>http://www.last.fm/tag/worse%20than%20having%20someone%20shit%20on%20your%20face</url>
 </tag></toptags></lfm>
