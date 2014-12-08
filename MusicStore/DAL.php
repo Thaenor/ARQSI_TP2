@@ -243,7 +243,8 @@ class DAL {
     {
       $client = new SoapClient($this->url,array("trace" => 1, "exception" => 0));
 
-      $params = array('api_key' => $API_KEY);
+      //$params = array('api_key' => $API_KEY);
+      $params = array('api_key' => '8f3f21dd-5938-43ac-a1dd-10407d45db69');
       $result = $client->getAllAbums($params);
 
       return $result->getAllAbumsResult;
