@@ -26,45 +26,39 @@ namespace IDEIMusic
             return "it works!";
         }
 
-        public string verifyAPI(string inputJSON)
+        public string verifyAPI(string adminLojaID, string api_key)
         {
-            JObject json_object = JObject.Parse(inputJSON);
 
-            var user = json_object["UserID"].ToString();
-            var API_Key = json_object["API_KEY"].ToString();
+            Store storeSelected = db.Stores.Where(store => store.UserEmail == adminLojaID).First();
 
-            Store storeSelected = db.Stores.Where(store => store.UserEmail == user).First();
+            if (storeSelected.store_api_key.ToString() == api_key)
+                return "true";
 
-            if (storeSelected.store_api_key.ToString() == API_Key)
-                return "True";
-
-            return "False";
+            return "false";
         }
-
-        public string firstContact(string inputJSON)
+        
+        public string getAPI_KEY(string adminLojaID)
         {
-            var j = Json.Decode(inputJSON);
+            Store storeAdmin = db.Stores.Where(adminId => adminId.UserEmail == adminLojaID).First();
 
-            string userName = j["UserEmail"];
-            var user = db.Users.Where(a => a.UserEmail.Equals(userName)).FirstOrDefault();
-
-            string result = "fail";
-
-            if (user != null)
+            if (storeAdmin != null)
             {
-                if (user is Store)
-                {
-                    Store a = (Store)user;
-                    result = a.store_api_key.ToString();
-                }
+                return storeAdmin.store_api_key;
             }
 
-            return result;
+            return "Not registered. Please consider registering at IDEIMusic website first at http://wvm024.dei.isep.ipp.pt/ideimusic/Stores/Create";
         }
 
-        public string getAllAbums()
+        public string getAllAbums(string api_key)
         {
-            return Json.Encode(db.Albums.ToList());
+
+            Store storeAdmin = db.Stores.Where(adminId => adminId.store_api_key == api_key).First();
+            if (storeAdmin != null)
+            {
+                return Json.Encode(db.Albums.ToList());
+            }
+
+            return "Incorrect API_KEY or not registed at IDEIMusic. Please consider registering at IDEIMusic website first at http://wvm024.dei.isep.ipp.pt/ideimusic/Stores/Create";
         }
 
         public string RegisterSale(string inputJSON)
@@ -81,17 +75,23 @@ namespace IDEIMusic
 
         }
 
-        public string updateAlbumStock(string inputJSON)
+        public string updateAlbumStock(string api_key, int albumID, int quantity)
         {
-            string j = Json.Decode(inputJSON);
+            Store storeAdmin = db.Stores.Where(adminId => adminId.store_api_key == api_key).First();
+            Album albumToUpdate = db.Albums.Where(idAlbum => idAlbum.AlbumID == albumID).First();
 
-            string result = "fail";
-            if (true)
+            if (storeAdmin != null && albumToUpdate != null)
             {
-                result = "OK";
+                albumToUpdate.StockAmount -= quantity;
+
+                db.Entry(albumToUpdate).State = System.Data.Entity.EntityState.Modified;
+
+                db.SaveChanges();
+
+                return "updated";
             }
 
-            return result;
+            return "fail";
         }
     }
 }

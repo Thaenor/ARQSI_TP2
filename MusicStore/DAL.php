@@ -218,20 +218,44 @@ class DAL {
     /****************************************** MS -> IDEIMUSIC *********************************************/
     private $url = "http://wvm024.dei.isep.ipp.pt/ideimusic/IDEIMusicService.svc?wsdl";
 
-    function getAllAlbumsFromIDEIMusic()
+    function verifyIDEIMusicAPI_KEY($AdminID, $API_KEY)
     {
-
       $client = new SoapClient($this->url,array("trace" => 1, "exception" => 0));
 
-      // Upload the file
-      $result = $client->getAllAbums();
+      $params = array('adminLojaID' => $AdminID, 'api_key' => $API_KEY);
+      $result = $client->verifyAPI($params);
+
+      return $result->verifyAPIResult;
+    }
+
+    function getAPI_KEY($AdminID)
+    {
+      $client = new SoapClient($this->url,array("trace" => 1, "exception" => 0));
+
+      $params = array('adminLojaID' => $AdminID);
+      $result = $client->getAPI_KEY($params);
+
+      return $result->getAPI_KEYResult;
+    }
+
+    function getAllAlbumsFromIDEIMusic($API_KEY)
+    {
+      $client = new SoapClient($this->url,array("trace" => 1, "exception" => 0));
+
+      $params = array('api_key' => $API_KEY);
+      $result = $client->getAllAbums($params);
 
       return $result->getAllAbumsResult;
     }
 
-    function verificarAPI_KEY($AdminID)
+    function updateAlbumStock($API_KEY, $AlbumID, $Quantity)
     {
-      # code...
+      $client = new SoapClient($this->url,array("trace" => 1, "exception" => 0));
+      
+      $params = array('api_key' => $API_KEY, 'albumID' => $AlbumID, 'quantity' => $Quantity);
+      $result = $client->updateAlbumStock($params);
+
+      return $result->updateAlbumStockResult;
     }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
@@ -338,7 +362,7 @@ class DAL {
     return null;
   }
 
-  function verifyAPI_KEY($userID)
+  function verifyLocalAPI_KEY($userID)
   {
     $mysqli = $this->db_mysqliconn();
     if($mysqli){

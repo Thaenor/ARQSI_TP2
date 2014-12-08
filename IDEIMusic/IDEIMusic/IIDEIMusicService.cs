@@ -16,14 +16,14 @@ namespace IDEIMusic
         [OperationContract]
         string Test();
         [OperationContract]
-        string verifyAPI(string inputJSON);
+        string verifyAPI(string adminLojaID, string api_key);
         [OperationContract]
-        string firstContact(string inputJSON);
+        string getAPI_KEY(string adminLojaID);
         [OperationContract]
-        string getAllAbums();
+        string getAllAbums(string api_key);
         [OperationContract]
         string RegisterSale(string inputJSON);
         [OperationContract]
-        string updateAlbumStock(string inputJSON);
+        string updateAlbumStock(string api_key, int albumID, int quantity);
     }
 }
