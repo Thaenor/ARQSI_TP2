@@ -122,9 +122,10 @@ function loadXMLDoc(sendJSON)
             alert(xmlhttp.responseText);
           }
       }
-      xmlhttp.open("GET","registerSale.php",true);
+      //xmlhttp.open("POST","registerSale.php?string="+sendJSON+"&user="+readCookie('username'),true);
+      xmlhttp.open("GET","registerSale.php?stringJSON="+sendJSON+"&username="+readCookie('username'),true);
       //xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-      xmlhttp.send(sendJSON);
+      xmlhttp.send();
 }
 
 /******************************************************************************/
