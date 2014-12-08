@@ -1,6 +1,8 @@
 <?php
 //"SOU UM BURRO STRESSADO!!"
-
+error_reporting(0);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 'on');
 class DAL {
 
     private $DB_HOST = 'localhost';
@@ -42,6 +44,7 @@ class DAL {
     `AlbumArtist` varchar(80) NOT NULL,
     `AmountStock` INT NOT NULL,
     `UnitPrice` DECIMAL(5,2) NOT NULL,
+    `Discount` INT,
     PRIMARY KEY(AlbumID)
   )ENGINE=MyISAM DEFAULT CHARSET=latin1;' ;
 
@@ -54,7 +57,7 @@ class DAL {
 
   ///////////////////////////////////////// INSERTS /////////////////////////////////////////
 
-  function insertAlbum($AlbumName,$AlbumArtist, $AmountStock, $UnitPrice) {
+  function insertAlbum($AlbumName,$AlbumArtist, $AmountStock, $UnitPrice,$Discount) {
     $mysqli = $this-> db_mysqliconn();
 
     // por precaucao pede-se para criar a tabela CASO(SE) esta nao exista
@@ -68,8 +71,11 @@ class DAL {
       </script>
       <?php
     }
-
-    $sql = "INSERT INTO `ALBUM` (`AlbumName`,`AlbumArtist`,`AmountStock`,`UnitPrice`) VALUES ('$AlbumName','$AlbumArtist',$AmountStock,$UnitPrice)";
+    if($Discount != 0){
+      $sql = "INSERT INTO `ALBUM` (`AlbumName`,`AlbumArtist`,`AmountStock`,`UnitPrice`,`Discount`) VALUES ('$AlbumName','$AlbumArtist',$AmountStock,$UnitPrice,$Discount)";
+    }
+    else
+      $sql = "INSERT INTO `ALBUM` (`AlbumName`,`AlbumArtist`,`AmountStock`,`UnitPrice`) VALUES ('$AlbumName','$AlbumArtist',$AmountStock,$UnitPrice)";
 
     $result = mysqli_query($mysqli, $sql);
     $this->db_close();
@@ -125,12 +131,12 @@ class DAL {
 
     $sqlSale = "INSERT INTO `SALE` (`UserID`) VALUES ('$UserID')";
     $result = mysqli_query($mysqli, $sql);
-    
+
     $sqlGetSaleID = "SELECT LAST(`SaleID`) FROM `Sale`;";
     $lastSaleID = mysql_query($mysqli, $lastSaleID);
 
     $numberSales = 0;
-    
+
     foreach ($cartRow as $cart) {
       $AlbumID = $cartRow["AlbumID"];
       $Quantity = $cartRow["Quantity"];
@@ -140,7 +146,7 @@ class DAL {
       if($result)
         $numberSales = $numberSales + 1;
     }
-    
+
     $this->db_close();
     return $numberSales;
   }
@@ -196,10 +202,10 @@ class DAL {
   function getAllAlbums(){
     $mysqli = $this->db_mysqliconn();
     $strquery = 'SELECT * FROM `ALBUM`';
-    
+
     if($mysqli){
       $recordset = $mysqli->query($strquery);
-      
+
       $results = array();
 
       if ($recordset->num_rows > 0) {
@@ -217,10 +223,10 @@ class DAL {
   function getAlbumInfo($AlbumID){
     $mysqli = $this->db_mysqliconn();
     $strquery = "SELECT * FROM `ALBUM` WHERE AlbumID = $AlbumID";
-    
+
     if($mysqli){
       $recordset = $mysqli->query($strquery);
-      
+
       $results = array();
 
       if ($recordset->num_rows > 0) {
@@ -314,9 +320,9 @@ class DAL {
         $mysqli = $this->db_mysqliconn();
         return $mysqli->real_escape_string($sqlString);
     }
-  
+
   function db_close() {
-    $mysqli= $this->db_mysqliect();
+    $mysqli= $this->db_mysqliconn();
     mysqli_close($mysqli);
   }
 }

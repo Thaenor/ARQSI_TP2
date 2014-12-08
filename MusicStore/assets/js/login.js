@@ -1,17 +1,20 @@
+"use strict";
 var xmlHttpObj;
 var doctext;
 
-
-
+var username;
+var password;
 /******************************************************************************/
 
 
 function preValidateLogin(){
 
-  var username = document.getElementById('username').value;
+  username = document.getElementById('username').value;
   var password = document.getElementById('password').value;
 
   if(username != '' && password != ''){
+    createCookie("username",username, 1);
+    createCookie("password",password, 1);
     MakeXMLHTTPCall(username,password);
   }else {
       var ele = document.getElementById('errorlist');
@@ -72,22 +75,32 @@ function stateHandler()
             ele.innerHTML = 'User name and password do not match or we can\t reach the server.';
             ele.style.visibility = 'visible';
         }else {
-            var json = JSON.parse(doctext);
-            createCookie("username",json.User.Name, 1);
-            //compileCatalog(json);
 
             var container = document.getElementById('welcome');
-            container.innerHTML="welcome "+json.User.Name+"!";
+            container.innerHTML="welcome "+username+"!";
             container.style.visibility='visibile';
             var cont = document.getElementById('loginform');
             cont.style.visibility="hidden";
             var ele = document.getElementById('logoutbutt');
             ele.style.visibility = "visible";
+            var ele = document.getElementById('registerform');
+            ele.style.visibility="hidden";
+
+            //a is for admin
+            if(doctext == 'a'){
+              alert('here');//display SOAP order
+            }else if(doctext == 'error'){
+              //display error message
+            }else{
+
+              var json = JSON.parse(doctext);
+              compileCatalog(json, username);
+            }
+
             /*container.innerHTML+='<br/><input type="button" value="view cart" onclick="viewCart()">';
             container.innerHTML+='<br/><div id="CartSpace" style="visibility: hidden"></div>';*/
             //printCatalog(json, json.User.Name);
         }
-
     }
 }
 
@@ -135,13 +148,20 @@ function logout(){
 
 function refresh()
 {
-  //alert('welcome'+readCookie('username'));
-  if(readCookie('username')){
+  username = readCookie('username');
+  password = readCookie('password');
+
+  if( (username != null) && (password =! null) ){
+    username = readCookie('username');
+    password = readCookie('password');
+
     var container = document.getElementById('welcome');
-    container.innerHTML="welcome "+readCookie('username')+"!";
+    container.innerHTML="welcome "+username+"!";
     var cont = document.getElementById('loginform');
     cont.style.visibility="hidden";
     var ele = document.getElementById('logoutbutt');
     ele.style.visibility = "visible";
+
+    MakeXMLHTTPCall(readCookie('username'),readCookie('password'));
   }else {logout()}
 }

@@ -5,7 +5,9 @@
  * Date: 06/12/14
  * Time: 19:01
  */
-error_reporting(0);
+ error_reporting(0);
+ //error_reporting(E_ALL);
+ //ini_set('display_errors', 'on');
 require_once 'DAL.php';
 
 if(isset($_REQUEST['username'])){
@@ -25,9 +27,24 @@ $dal = new DAL();
 $username = $dal->sanitize($username);
 $password = $dal->sanitize($password);
 
-if( $dal->validLogin($username, $password) == true){
+$reply = $dal->validLogin($username, $password);
 
-    //this is meant to be the reply from the server, originally the php would fetch this from DB
+//reply is 1 for admin, 2 for client and 0 for an error;
+switch ($reply) {
+  case 0:
+  echo "error";
+  break;
+  case 1:
+  echo "a";
+  break;
+  case 2:
+  echo $dal->getAllAlbums();
+  break;
+}
+
+//verifyAPIkey return 1 if it exists and 0 if it doesn't -1 for errors
+
+    /*this is meant to be the reply from the server, originally the php would fetch this from DB
     $reply = '{ "User" : { "Name"  : "John Doe", "cash" : 700 },
    "Catalog"  : [
       { "Name"  : "Album1", "price" : 100, "Discount" : 10 },
@@ -35,8 +52,4 @@ if( $dal->validLogin($username, $password) == true){
       { "Name"  : "Album3", "price" : 130, "Discount" : 20 },
       { "Name"  : "Album4", "price" : 130, "Discount" : 20 }
    ]
-}    ';
-    echo $reply;
-} else{
-    echo 'login error';
-}
+}    ';*/

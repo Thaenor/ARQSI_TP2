@@ -4,10 +4,11 @@ var Tprice;
 
 var username;
 
-function compileCatalog(json, username){
-  for(var x=0; x<json.Catalog.length; x++){
-    catalog.push( new product(json.Catalog[x].Name, json.Catalog[x].price, json.Catalog[x].quantity, json.Catalog[x].discount) );
-    console.log(catalog[x]);
+function compileCatalog(json, user){
+  username = user;
+
+  for(var x=0; x<json.length; x++){
+    catalog.push( new product(json[x].AlbumID, json[x].AlbumName, json[x].AlbumArtist, json[x].AmountStock, json[x].UnitPrice, json[x].Discount) );
   }
 
   //printCatalog();

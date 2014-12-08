@@ -1,6 +1,7 @@
 // product class
-function product(name, artist, price,
+function product(id, name, artist, price,
   quantity, discount, image) {
+    this.id = id;
     this.name = name;
     this.artist = artist;
     this.price = price;
