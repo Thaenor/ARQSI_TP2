@@ -1,6 +1,7 @@
 <?php
 //"SOU UM BURRO STRESSADO!!"
 error_reporting(0);
+require_once('lib/nusoap.php');
 //error_reporting(E_ALL);
 //ini_set('display_errors', 'on');
 class DAL {
@@ -198,28 +199,43 @@ class DAL {
   }
     
     
-    ////////////////////////////////////////////////////////////////////////////////////////////////
+    //////////////////////////////////////////////WEB SERVICES//////////////////////////////////////////////////
+
+    /****************************************** MusicStore -> IMPORTMUSIC *********************************************/
     function insertToImportMusic($adminID,$albumName,$price)
     {
+        $client = new nusoap_client('http://localhost:8080/ImportMusic/WSImportMusicServer.php');
 
-        error_reporting(E_ALL);
-        ini_set('display_errors', 'on');
+        if ( $client->getError() ) {
+            print "<h2>Soap Constructor Error:</h2><pre>".
+                $client->getError()."</pre>";
+        }
 
-          require_once('lib/nusoap.php');
-          //$ns='urn:WSImportMusicServer';
+        $result = $client->call('recordSale',array('store'=>$adminID, 'prod'=>$albumName,'price'=>$price));
 
-          $client = new nusoap_client('http://localhost:8080/ImportMusic/WSImportMusicServer.php');
-
-          if ( $client->getError() ) {
-              print "<h2>Soap Constructor Error:</h2><pre>".
-                  $client->getError()."</pre>";
-          }
-
-          $result = $client->call('recordSale',array('store'=>$adminID, 'prod'=>$albumName,'price'=>$price));
-
-          return $result;
+        return $result;
     }
+
+    /****************************************** MS -> IDEIMUSIC *********************************************/
+    function getAllAlbumsFromIDEIMusic()
+    {
+      
+      $client = new nusoap_client('http://wvm024.dei.isep.ipp.pt/ideimusic/IDEIMusicService.svc?singleWsdl');
+      
+      if ( $client->getError() ) {
+            print "<h2>Soap Constructor Error:</h2><pre>".$client->getError()."</pre>";
+        }
+        
+      ////////////problema é aqui!///////////
+      $result = $client->get('getAllAbums');
+      ///////////////////////////////////////
+
+      return $result->getAllAbumsResult;
+    }
+
+
     ////////////////////////////////////////////////////////////////////////////////////////////////
+
 
   ////////////////////////////////////////// GETS ///////////////////////////////////////////
 

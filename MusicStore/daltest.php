@@ -46,5 +46,5 @@ $dal=new dal();
 //OK//$result = $dal->insertAPI_KEY('admin','123456-123456');
 //OK//echo " <-> inserir api_key no 'admin': ".$result;
 
-$result = $dal->insertToImportMusic('admin@loja1.com','Best Of Queen',15.6);
+$result = $dal->getAllAlbumsFromIDEIMusic();
 echo $result;
