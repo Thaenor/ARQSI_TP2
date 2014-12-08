@@ -78,12 +78,16 @@ var product_price = 0;
     product_price = parseInt( product_price * cart[x].quantity);
     Tprice += product_price;
 
-    ele.innerHTML = '<li>'+cart[x].name+' | '+cart[x].quantity+' | '+product_price+' </li>';
+    if(!ele){
+      ele.innerHTML = '<li>'+cart[x].name+' | '+cart[x].quantity+' | '+product_price+' </li>';
+      ele.style.visibility = 'visible';
+    }else{
+      ele.innerHTML += '<li>'+cart[x].name+' | '+cart[x].quantity+' | '+product_price+' </li>';
+      ele.style.visibility = 'visible';
+    }
   }
-
-  ele.innerHTML+='<b>total: '+Tprice+'</b>'
-  ele.innerHTML+='<input type="button" value="buy(view result on console)" onclick="buy()">';
-  ele.style.visibility = 'visible';
+  var ele = document.getElementById('buybutt');
+  ele.style.visibility = "visible";
 }
 
 /******************************************************************************/
@@ -92,7 +96,7 @@ var product_price = 0;
 function buy(){
   var sendJSON = JSON.stringify(cart);
   //console.log (sendJSON);
-  var r = confirm("Are you sure you want to buy!");
+  var r = confirm("Are you sure you want to buy!\nTotal Price= "+Tprice);
   if (r == true) {
     loadXMLDoc(sendJSON);
   } else {
@@ -115,11 +119,11 @@ function loadXMLDoc(sendJSON)
       {
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
           {
-            document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+            alert(xmlhttp.responseText);
           }
       }
-      xmlhttp.open("POST","registerSale.php",true);
-      xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+      xmlhttp.open("GET","registerSale.php",true);
+      //xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
       xmlhttp.send(sendJSON);
 }
 
