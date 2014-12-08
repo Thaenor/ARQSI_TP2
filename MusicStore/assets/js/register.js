@@ -63,9 +63,10 @@ function RegisterstateHandler()
     {
         // propriedade responseText que devolve a resposta do servidor
         doctext = xmlHttpObj.responseText;
-        console.log(xmlHttpObj.responseText);
-        alert(xmlHttpObj.responseText);
-        console.log(doctext);
-        if(doctext!=''){alert("yey"); console.log('success!!!');}
+        if(doctext == 'YES'){
+          alert('success! you can now log in.');
+        }else{
+          alert("we're but the server isn't talking to us, please try again later (or make sure your data is correct)");
+        }
     }
 }

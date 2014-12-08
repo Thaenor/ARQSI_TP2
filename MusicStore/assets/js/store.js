@@ -91,15 +91,37 @@ var product_price = 0;
 
 function buy(){
   var sendJSON = JSON.stringify(cart);
-  console.log (sendJSON);
-
-  /*
-  * 1. send this data to the server as new ajax request
-  * 2. decrease quantity in albums and make sure everything was ok
-  * 3. (optionally) return the user cash amount and compare to make sure the math was right
-  * */
+  //console.log (sendJSON);
+  var r = confirm("Are you sure you want to buy!");
+  if (r == true) {
+    loadXMLDoc(sendJSON);
+  } else {
+    return;
+  }
 }
 
+function loadXMLDoc(sendJSON)
+{
+  var xmlhttp;
+  if (window.XMLHttpRequest)
+    {// code for IE7+, Firefox, Chrome, Opera, Safari
+      xmlhttp=new XMLHttpRequest();
+    }
+    else
+      {// code for IE6, IE5
+        xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+      }
+      xmlhttp.onreadystatechange=function()
+      {
+        if (xmlhttp.readyState==4 && xmlhttp.status==200)
+          {
+            document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+          }
+      }
+      xmlhttp.open("POST","registerSale.php",true);
+      xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+      xmlhttp.send(sendJSON);
+}
 
 /******************************************************************************/
 

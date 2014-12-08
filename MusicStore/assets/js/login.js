@@ -76,30 +76,30 @@ function stateHandler()
             ele.style.visibility = 'visible';
         }else {
 
-            var container = document.getElementById('welcome');
-            container.innerHTML="welcome "+username+"!";
-            container.style.visibility='visibile';
-            var cont = document.getElementById('loginform');
-            cont.style.visibility="hidden";
-            var ele = document.getElementById('logoutbutt');
-            ele.style.visibility = "visible";
-            var ele = document.getElementById('registerform');
-            ele.style.visibility="hidden";
-
             //a is for admin
             if(doctext == 'a'){
-              alert('here');//display SOAP order
+              //display SOAP order
+              showSoapOrder();
             }else if(doctext == 'error'){
               //display error message
+              alert('login error');
+              return;
             }else{
+
+              var container = document.getElementById('welcome');
+              container.innerHTML="welcome "+username+"!";
+              container.style.visibility='visibile';
+              var cont = document.getElementById('loginform');
+              cont.style.visibility="hidden";
+              var ele = document.getElementById('logoutbutt');
+              ele.style.visibility = "visible";
+              var ele = document.getElementById('RegisterWidget');
+              ele.style.visibility="hidden";
 
               var json = JSON.parse(doctext);
               compileCatalog(json, username);
             }
 
-            /*container.innerHTML+='<br/><input type="button" value="view cart" onclick="viewCart()">';
-            container.innerHTML+='<br/><div id="CartSpace" style="visibility: hidden"></div>';*/
-            //printCatalog(json, json.User.Name);
         }
     }
 }
