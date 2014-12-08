@@ -19,15 +19,14 @@ function compileCatalog(json, user){
 function printCatalog(){
 
   var container = document.getElementById('CatalogDisplay');
-  container.innerHTML = "name | price | discount <hr>";
+  container.innerHTML = "name | artist | price | discount <hr>";
   container.innerHTML += "";
 
   for(var x=0; x<catalog.length; x++){
-    container.innerHTML += catalog[x].name+" | "+catalog[x].price + " | " +catalog[x].discount;
+    container.innerHTML += catalog[x].name+" | "+catalog[x].artist+" | "+catalog[x].price + " | " +catalog[x].discount;
     var number = '<input type="number" id="input-small" name="quantity" min="1" max="'+catalog[x].amountStock+'" value="1">';
     var button = '<button type="button" onclick="addToCart('+x+')">Add to cart</button>';
     container.innerHTML += " &nbsp; "+number+" &nbsp; "+button+" <br/><br/>";
-
   }
 }
 
@@ -70,7 +69,6 @@ function addToCart(id){
 
 function viewCart(){
   var ele = document.getElementById('viewcartDiv');
-
 var product_price = 0;
   for(x in cart){
     var percent = (cart[x].discount / 100);

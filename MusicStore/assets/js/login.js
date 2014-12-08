@@ -84,7 +84,7 @@ function stateHandler()
               createCookie("username",username, 1);
               createCookie("password",password, 1);
               showWelcomeDialog();
-              //showSoapOrder();
+              AjaxSoapOrder();
             }else{
               //it's a client!
               createCookie("username",username, 1);
