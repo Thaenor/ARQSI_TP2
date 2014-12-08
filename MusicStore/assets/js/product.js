@@ -1,13 +1,13 @@
 // product class
-function product(id, name, artist, price,
-  quantity, discount, image) {
+function product(id, name, artist, amountStock, price, discount, quantity) {
     this.id = id;
     this.name = name;
     this.artist = artist;
+    this.amountStock = amountStock;
     this.price = price;
-    this.quantity = quantity;
     this.discount = discount;
-    this.image = image;
+    this.quantity = quantity;
+    //this.image = image;
 
   }
 
