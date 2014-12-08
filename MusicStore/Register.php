@@ -5,9 +5,9 @@
  * Date: 05/12/14
  * Time: 18:09
  */
-//error_reporting(0);
-error_reporting(E_ALL);
-ini_set('display_errors', 'on');
+error_reporting(0);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 'on');
 require_once 'DAL.php';
 $dal = new DAL();
 
@@ -47,7 +47,7 @@ else
         //prevents SQL injection
         $username = $dal->sanitize($username);
         $password = $dal->sanitize($password);
-        $flag = $dal->insertUser($username,$password);
+        $flag = $dal->insertClient($username,$password);
         //client expects a message with "success!" string or it will handle has failure.
         if($flag == 1){
             echo 'success!';
@@ -56,5 +56,3 @@ else
         $errors[] = 'something went wrong, check your Internet connection and try again in a few minutes. If this problem persists please bother the developers, please tell them'.$e;
         print_r($errors);
     }
-
-echo 'end';
