@@ -16,15 +16,20 @@ if($adminName != $adminConfirm){
 
 //verify API KEY
 if( $dal->verifyLocalAPI_KEY($adminName) == 0 || $dal->verifyLocalAPI_KEY($adminName) == -1){
-    echo 'ERROR getting API KEY';
-    return;
-}else {
-    $API = $dal->verifyLocalAPI_KEY($adminName);
-}
 
-if( $dal->verifyIDEIMusicAPI_KEY($adminName,$API) == 0 || $dal->verifyIDEIMusicAPI_KEY($adminName,$API) == -1){
-    echo 'ERROR matching API KEY with IDEIMusic, BLAME THEM!';
-    return;
+
+    $NewAPI = $dal->getAPI_KEYIDEIMusic($adminConfirm);
+    //our error message
+    if( strpos($NewAPI, 'Not') ){
+      echo $NewAPI;
+      return;
+    } else {
+      $dal->insertAPI_KEY($adminConfirm,$NewAPI);
+      echo $jsonReply = $dal->getAllAlbumsFromIDEIMusic($NewAPI);
+    }
+
 }else {
+    $API = $dal->getAdminAPI();
     echo $jsonReply = $dal->getAllAlbumsFromIDEIMusic($API);
+    return;
 }

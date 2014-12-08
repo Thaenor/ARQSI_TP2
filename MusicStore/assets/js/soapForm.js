@@ -28,8 +28,8 @@ function AjaxSoapOrder()
                 var json = JSON.parse(xmlhttp.responseText);
             } catch(err){
               console.log(err.message);
-              logout();
-              location.reload();
+              //logout();
+              //location.reload();
             }
           }
         }

@@ -228,7 +228,7 @@ class DAL {
       return $result->verifyAPIResult;
     }
 
-    function getAPI_KEY($AdminID)
+    function getAPI_KEYIDEIMusic($AdminID)
     {
       $client = new SoapClient($this->url,array("trace" => 1, "exception" => 0));
 
@@ -251,7 +251,7 @@ class DAL {
     function updateAlbumStock($API_KEY, $AlbumID, $Quantity)
     {
       $client = new SoapClient($this->url,array("trace" => 1, "exception" => 0));
-      
+
       $params = array('api_key' => $API_KEY, 'albumID' => $AlbumID, 'quantity' => $Quantity);
       $result = $client->updateAlbumStock($params);
 
@@ -319,6 +319,28 @@ class DAL {
         $row = $recordset->fetch_assoc();
         $this->db_close();
         return $row["UserID"];
+      }
+      $this->db_close();
+      return $recordset;
+    }
+    $this->db_close();
+    return null;
+  }
+
+  function getAdminAPI()
+  {
+    $mysqli = $this->db_mysqliconn();
+    $strquery = "SELECT `API_KEY` FROM `USERS` WHERE `Type` = 1";
+
+    if($mysqli){
+      $recordset = $mysqli->query($strquery);
+
+      $results = array();
+
+      if ($recordset->num_rows > 0) {
+        $row = $recordset->fetch_assoc();
+        $this->db_close();
+        return $row["API_KEY"];
       }
       $this->db_close();
       return $recordset;
