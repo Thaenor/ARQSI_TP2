@@ -197,8 +197,8 @@ class DAL {
     $this->db_close();
     return $result;
   }
-    
-    
+
+
     //////////////////////////////////////////////WEB SERVICES//////////////////////////////////////////////////
 
     /****************************************** MusicStore -> IMPORTMUSIC *********************************************/
@@ -219,13 +219,13 @@ class DAL {
     /****************************************** MS -> IDEIMUSIC *********************************************/
     function getAllAlbumsFromIDEIMusic()
     {
-      
+
       $client = new nusoap_client('http://wvm024.dei.isep.ipp.pt/ideimusic/IDEIMusicService.svc?singleWsdl');
-      
+
       if ( $client->getError() ) {
             print "<h2>Soap Constructor Error:</h2><pre>".$client->getError()."</pre>";
         }
-        
+
       ////////////problema é aqui!///////////
       $result = $client->get('getAllAbums');
       ///////////////////////////////////////
@@ -273,6 +273,28 @@ class DAL {
         $row = $recordset->fetch_assoc();
         $this->db_close();
         return json_encode($row);
+      }
+      $this->db_close();
+      return $recordset;
+    }
+    $this->db_close();
+    return null;
+  }
+
+  function getAdmin()
+  {
+    $mysqli = $this->db_mysqliconn();
+    $strquery = "SELECT `UserID` FROM `USERS` WHERE `Type` = 1";
+
+    if($mysqli){
+      $recordset = $mysqli->query($strquery);
+
+      $results = array();
+
+      if ($recordset->num_rows > 0) {
+        $row = $recordset->fetch_assoc();
+        $this->db_close();
+        return $row["UserID"];
       }
       $this->db_close();
       return $recordset;
