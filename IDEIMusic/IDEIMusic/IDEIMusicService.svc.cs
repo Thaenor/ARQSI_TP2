@@ -23,7 +23,6 @@ namespace IDEIMusic
 
         public string verifyAPI(string inputJSON)
         {
-
             JObject json_object = JObject.Parse(inputJSON);
 
             var user = json_object["UserID"].ToString();
@@ -67,7 +66,7 @@ namespace IDEIMusic
         {
             string j = Json.Decode(inputJSON);
 
-            string result = "fail";
+            string result = "Fail";
             if (true)
             {
                 result = "OK";
