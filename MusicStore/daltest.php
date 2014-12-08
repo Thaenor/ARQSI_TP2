@@ -6,22 +6,22 @@ require_once 'DAL.php';
 
 $dal=new dal();
 
-$AlbumName = "Concertina";
-$AlbumArtist = "Francisco";
-$AmountStock = 15;
-$UnitPrice = 56.6;
+//$AlbumName = "Concertina";
+//$AlbumArtist = "Francisco";
+//$AmountStock = 15;
+//$UnitPrice = 56.6;
 
-$result = $dal->insertAlbum("Words To The Blind","Savages", 20, 10, 50);
-$result = $dal->insertAlbum("A New Testament","Christopher Owens", 20, 10, 50);
-$result = $dal->insertAlbum("Time To Die","Electric Wizard", 20, 10, 50);
-$result = $dal->insertAlbum("Cheek to Cheek","Tony Bennett", 20, 10, 50);
-$result = $dal->insertAlbum("Power","Fryars", 20, 10, 50);
-$result = $dal->insertAlbum("La Petite Mort","James", 20, 10, 50);
-$result = $dal->insertAlbum("Modern Vices","Modern Vices", 20, 10, 50);
-$result = $dal->insertAlbum("More Lies from the Gooseberry Bush","Teenage Guitar", 20, 10, 50);
-$result = $dal->insertAlbum("Tell 'Em I'm Gone","Yusuf / Cat Stevens", 20, 10, 50);
-$result = $dal->insertAlbum("Popular Problems","Leonard Cohen", 20, 10, 50);
-echo "<h1>done</h1>";
+//OK//$result = $dal->insertAlbum("Words To The Blind","Savages", 20, 10, 50);
+//OK//$result = $dal->insertAlbum("A New Testament","Christopher Owens", 20, 10, 50);
+//OK//$result = $dal->insertAlbum("Time To Die","Electric Wizard", 20, 10, 50);
+//OK//$result = $dal->insertAlbum("Cheek to Cheek","Tony Bennett", 20, 10, 50);
+//OK//$result = $dal->insertAlbum("Power","Fryars", 20, 10, 50);
+//OK//$result = $dal->insertAlbum("La Petite Mort","James", 20, 10, 50);
+//OK//$result = $dal->insertAlbum("Modern Vices","Modern Vices", 20, 10, 50);
+//OK//$result = $dal->insertAlbum("More Lies from the Gooseberry Bush","Teenage Guitar", 20, 10, 50);
+//OK//$result = $dal->insertAlbum("Tell 'Em I'm Gone","Yusuf / Cat Stevens", 20, 10, 50);
+//OK//$result = $dal->insertAlbum("Popular Problems","Leonard Cohen", 20, 10, 50);
+//OK//echo "<h1>done</h1>";
 
 //OK//echo " <-> inserir album: ".$result;
 
@@ -45,3 +45,6 @@ echo "<h1>done</h1>";
 
 //OK//$result = $dal->insertAPI_KEY('admin','123456-123456');
 //OK//echo " <-> inserir api_key no 'admin': ".$result;
+
+$result = $dal->insertToImportMusic('admin@loja1.com','Best Of Queen',15.6);
+echo $result;
