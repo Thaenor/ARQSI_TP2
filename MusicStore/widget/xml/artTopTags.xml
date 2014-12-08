@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<toptags artist="CD">
+    <tag>
+    <name>trip-hop</name> 
+    <count>100</count>
+    <url>http://www.last.fm/tag/trip-hop</url>
+</tag>    <tag>
+    <name>Hip-Hop</name> 
+    <count>66</count>
+    <url>http://www.last.fm/tag/hip-hop</url>
+</tag>    <tag>
+    <name>unsigned</name> 
+    <count>66</count>
+    <url>http://www.last.fm/tag/unsigned</url>
+</tag>    <tag>
+    <name>underground</name> 
+    <count>66</count>
+    <url>http://www.last.fm/tag/underground</url>
+</tag>    <tag>
+    <name>mistagged artist</name> 
+    <count>33</count>
+    <url>http://www.last.fm/tag/mistagged%20artist</url>
+</tag>    <tag>
+    <name>origem desconhecida</name> 
+    <count>33</count>
+    <url>http://www.last.fm/tag/origem%20desconhecida</url>
+</tag></toptags></lfm>

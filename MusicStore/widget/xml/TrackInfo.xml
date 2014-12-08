@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<track>
+    <id>724234231</id>
+    <name>Two Weeks</name>
+            <mbid>54cfeebe-2527-4093-a520-8314a74bb5f3</mbid>
+            <url>http://www.last.fm/music/FKA+twigs/_/Two+Weeks</url>
+    <duration>249000</duration>
+    <streamable fulltrack="0">0</streamable>    
+        <listeners>116880</listeners>
+    <playcount>745298</playcount>
+        <artist>
+        <name>FKA twigs</name>
+                <mbid>1e4e9db7-5068-4a9c-bdd0-5777e47172c8</mbid>
+                    <url>http://www.last.fm/music/FKA+twigs</url>
+    </artist>
+        <album position="3">
+        <artist>FKA twigs</artist>
+        <title>LP1</title>
+                <mbid>dac94f06-b8ec-4b95-8891-7bf819956ad7</mbid>
+                    <url>http://www.last.fm/music/FKA+twigs/LP1</url>        
+        <image size="small">http://userserve-ak.last.fm/serve/64s/100237569.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/126/100237569.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/174s/100237569.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/100237569.png</image>
+    </album>
+        <toptags>
+        <tag>
+	  <name>trip-hop</name>
+	  <url>http://www.last.fm/tag/trip-hop</url>
+	</tag>
+        <tag>
+	  <name>electronic</name>
+	  <url>http://www.last.fm/tag/electronic</url>
+	</tag>
+        <tag>
+	  <name>sexy</name>
+	  <url>http://www.last.fm/tag/sexy</url>
+	</tag>
+        <tag>
+	  <name>2014</name>
+	  <url>http://www.last.fm/tag/2014</url>
+	</tag>
+        <tag>
+	  <name>explicit</name>
+	  <url>http://www.last.fm/tag/explicit</url>
+	</tag>
+      </toptags>
+    </track></lfm>
