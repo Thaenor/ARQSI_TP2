@@ -1,5 +1,6 @@
 ﻿using IDEIMusic.DAL;
 using IDEIMusic.Models;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Runtime.Serialization;
 using System.ServiceModel;
 using System.Text;
 using System.Web.Helpers;
+using System.Web.Script.Serialization;
 
 namespace IDEIMusic
 {
@@ -21,16 +23,18 @@ namespace IDEIMusic
 
         public string verifyAPI(string inputJSON)
         {
-            string j = Json.Decode(inputJSON);
 
-            string result = "fail";
-            if (true)
-            {
-                result = "OK";
-            }
+            JObject json_object = JObject.Parse(inputJSON);
 
-            return result;
+            var user = json_object["UserID"].ToString();
+            var API_Key = json_object["API_KEY"].ToString();
 
+            Store storeSelected = db.Stores.Where(store => store.UserEmail == user).First();
+
+            if (storeSelected.store_api_key.ToString() == API_Key)
+                return "True";
+
+            return "False";
         }
 
         public string firstContact(string inputJSON)

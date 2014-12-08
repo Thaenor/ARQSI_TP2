@@ -1,35 +1,29 @@
-﻿@model IEnumerable<IDEIMusic.Models.SaleSummary>
-
-@{
+﻿@{
     ViewBag.Title = "Sales";
 }
-
 <h2>Record of Sales</h2>
 
 <h3>Total Income: @ViewData["total"] €</h3>
 
 <table class="table">
-
     <tr>
         <th>
-            @Html.ActionLink("Sale ID", "Index", new { sortOrder = ViewBag.IDSort })
+            <a href="byID.cshtml" target="iframe">Sale ID</a>
         </th>
         <th>
-            @Html.ActionLink("Enrollment Date", "Index", new { sortOrder = ViewBag.DateSort })
+            Purchase Date
         </th>
         <th>
-            @Html.ActionLink("Quantity of Albums", "Index", new { sortOrder = ViewBag.QuantitySort })
+            <a href="byQuantity.cshtml" target="iframe">Quantity of Albums</a>
         </th>
         <th>
-            @Html.ActionLink("Income", "Index", new { sortOrder = ViewBag.IncomeSort })
+            <a href="byIncome.cshtml" target="iframe">Income</a>
         </th>
-
-        <th></th>
     </tr>
 
     @{
-        foreach (var item in Model)
-            {
+        foreach (var item in ViewData["summaries"] as IEnumerable<IDEIMusic.Models.SaleSummary>)
+        {
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.ID)
@@ -47,3 +41,4 @@
         }
     }
 </table>
+

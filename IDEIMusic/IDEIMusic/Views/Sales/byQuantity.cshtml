@@ -1,0 +1,19 @@
+﻿@{
+    foreach (var item in ViewData["summariesByQuantity"] as IEnumerable<ideimusic.models.salesummary>)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.PurchaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Income) €
+            </td>
+        </tr>
+    }
+}

@@ -8,5 +8,7 @@ namespace IDEIMusic.Models
     public interface ISaleRepository
     {
         IEnumerable<SaleSummary> GetSaleSummaries();
+        IEnumerable<SaleSummary> GetSaleSummariesBySales();
+        IEnumerable<SaleSummary> GetSaleSummariesByIncome();
     }
 }

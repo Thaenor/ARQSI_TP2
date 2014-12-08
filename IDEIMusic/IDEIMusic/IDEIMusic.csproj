@@ -41,6 +41,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.6.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -107,9 +111,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
-    </Reference>
     <Reference Include="EntityFramework">
       <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
     </Reference>
@@ -210,6 +211,10 @@
     <Compile Include="Migrations\201412061841099_salesPopulation.Designer.cs">
       <DependentUpon>201412061841099_salesPopulation.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201412080110018_moredata.cs" />
+    <Compile Include="Migrations\201412080110018_moredata.Designer.cs">
+      <DependentUpon>201412080110018_moredata.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Administrator.cs" />
@@ -226,13 +231,6 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
-    <Compile Include="WebService.svc.cs">
-      <DependentUpon>WebService.svc</DependentUpon>
-    </Compile>
-    <Compile Include="WebServiceSoap.asmx.cs">
-      <DependentUpon>WebServiceSoap.asmx</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
@@ -244,8 +242,6 @@
     <Content Include="IDEIMusicService.svc" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <Content Include="WebService.svc" />
-    <Content Include="WebServiceSoap.asmx" />
     <None Include="Properties\PublishProfiles\bla.pubxml" />
     <None Include="Scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -259,6 +255,9 @@
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Sales\byIncome.cshtml" />
+    <Content Include="Views\Sales\byID.cshtml" />
+    <None Include="Views\Sales\byQuantity.cshtml" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>
@@ -354,6 +353,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201412061841099_salesPopulation.resx">
       <DependentUpon>201412061841099_salesPopulation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201412080110018_moredata.resx">
+      <DependentUpon>201412080110018_moredata.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

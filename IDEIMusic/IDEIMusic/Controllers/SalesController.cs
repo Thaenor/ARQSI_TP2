@@ -27,18 +27,51 @@ namespace IDEIMusic.Controllers
         }
 
         // GET: Sales
-        public ActionResult Index()
+        public ActionResult Index(string sortorder)
         {
-            List<SaleSummary> sales = repo.GetSaleSummaries().ToList();
+            var sales = repo.GetSaleSummaries();
+
             float totalIncome = 0;
             foreach(SaleSummary s in sales)
-            {
                 totalIncome += s.Income;
+
+            ViewBag.IDSort = String.IsNullOrEmpty(sortorder) ? "id_desc" : "";
+            ViewBag.DateSort = sortorder == "Date" ? "date_desc" : "Date";
+            ViewBag.QuantitySort = sortorder == "Quantity" ? "quantity_desc" : "Quantity";
+            ViewBag.IncomeSort = sortorder == "Income" ? "income_desc" : "Income";
+
+            switch (sortorder)
+            {
+                case "id_desc":
+                    sales = sales.OrderByDescending(s => s.ID);
+                    break;
+                case "Date":
+                    sales = sales.OrderBy(s => s.PurchaseDate);
+                    break;
+                case "date_desc":
+                    sales = sales.OrderByDescending(s => s.PurchaseDate);
+                    break;
+                case "Quantity":
+                    sales = sales.OrderBy(s => s.Quantity);
+                    break;
+                case "quantity_desc":
+                    sales = sales.OrderByDescending(s => s.Quantity);
+                    break;
+                case "Income":
+                    sales = sales.OrderBy(s => s.Income);
+                    break;
+                case "income_desc":
+                    sales = sales.OrderByDescending(s => s.Income);
+                    break;
             }
 
-            ViewData["total"] = totalIncome;
+
+            ViewBag.Total = totalIncome;
             ViewData["summaries"] = repo.GetSaleSummaries();
-            return View(ViewData);
+            ViewData["summariesByQuantity"] = repo.GetSaleSummariesBySales().ToList();
+            ViewData["summariesByIncome"] = repo.GetSaleSummariesByIncome();
+
+            return View(sales.ToList());
         }
 
 
