@@ -117,7 +117,7 @@ function loadXMLDoc(sendJSON)
       {
         if (xmlhttp.readyState==4 && xmlhttp.status==200)
           {
-            alert(xmlhttp.responseText);
+            alert("you have sucessfully purchased the items in your cart");
           }
       }
       //xmlhttp.open("POST","registerSale.php?string="+sendJSON+"&user="+readCookie('username'),true);
