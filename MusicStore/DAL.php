@@ -139,8 +139,8 @@ class DAL {
     $numberSales = 0;
 
     foreach ($cartRow as $cart) {
-      $AlbumID = $cartRow["AlbumID"];
-      $Quantity = $cartRow["Quantity"];
+      $AlbumID = $cartRow["id"];
+      $Quantity = $cartRow["quantity"];
 
       $sqlSale = "INSERT INTO `ITEMSALE` (`SaleID`,`AlbumID`,`Quantity`) VALUES ('$lastSaleID','$AlbumID',$Quantity)";
       $result = mysqli_query($mysqli, $sql);
@@ -200,7 +200,6 @@ class DAL {
 
 
     //////////////////////////////////////////////WEB SERVICES//////////////////////////////////////////////////
-
     /****************************************** MusicStore -> IMPORTMUSIC *********************************************/
     function insertToImportMusic($adminID,$albumName,$price)
     {
@@ -217,22 +216,23 @@ class DAL {
     }
 
     /****************************************** MS -> IDEIMUSIC *********************************************/
+    private $url = "http://wvm024.dei.isep.ipp.pt/ideimusic/IDEIMusicService.svc?wsdl";
+
     function getAllAlbumsFromIDEIMusic()
     {
 
-      $client = new nusoap_client('http://wvm024.dei.isep.ipp.pt/ideimusic/IDEIMusicService.svc?singleWsdl');
+      $client = new SoapClient($this->url,array("trace" => 1, "exception" => 0));
 
-      if ( $client->getError() ) {
-            print "<h2>Soap Constructor Error:</h2><pre>".$client->getError()."</pre>";
-        }
-
-      ////////////problema é aqui!///////////
-      $result = $client->get('getAllAbums');
-      ///////////////////////////////////////
+      // Upload the file
+      $result = $client->getAllAbums();
 
       return $result->getAllAbumsResult;
     }
 
+    function verificarAPI_KEY($AdminID)
+    {
+      # code...
+    }
 
     ////////////////////////////////////////////////////////////////////////////////////////////////
 
