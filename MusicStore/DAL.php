@@ -1,9 +1,9 @@
 <?php
 //"SOU UM BURRO STRESSADO!!"
-error_reporting(0);
+//error_reporting(0);
 require_once('lib/nusoap.php');
-//error_reporting(E_ALL);
-//ini_set('display_errors', 'on');
+error_reporting(E_ALL);
+ini_set('display_errors', 'on');
 class DAL {
 
     private $DB_HOST = 'localhost';
@@ -131,19 +131,19 @@ class DAL {
     }
 
     $sqlSale = "INSERT INTO `SALE` (`UserID`) VALUES ('$UserID')";
-    $result = mysqli_query($mysqli, $sql);
+      $result = $mysqli->query($sqlSale);
 
     $sqlGetSaleID = "SELECT LAST(`SaleID`) FROM `Sale`;";
-    $lastSaleID = mysql_query($mysqli, $lastSaleID);
+
+      $lastSaleID = $mysqli->query($sqlGetSaleID);
 
     $numberSales = 0;
 
-    foreach ($cartRow as $cart) {
-      $AlbumID = $cartRow["id"];
-      $Quantity = $cartRow["quantity"];
-
-      $sqlSale = "INSERT INTO `ITEMSALE` (`SaleID`,`AlbumID`,`Quantity`) VALUES ('$lastSaleID','$AlbumID',$Quantity)";
-      $result = mysqli_query($mysqli, $sql);
+    foreach ($cart as $row) {
+      $AlbumID = $row->id;
+      $Quantity = $row->quantity;
+      $sql = "INSERT INTO `ITEMSALE` (`SaleID`,`AlbumID`,`Quantity`) VALUES ('$lastSaleID','$AlbumID',$Quantity)";
+      $result = $mysqli->query($sql);
       if($result)
         $numberSales = $numberSales + 1;
     }

@@ -5,9 +5,10 @@
 * Date: 05/12/14
 * Time: 18:09
 */
-//error_reporting(0);
-error_reporting(E_ALL);
-ini_set('display_errors', 'on');
+
+error_reporting(0);
+//error_reporting(E_ALL);
+//ini_set('display_errors', 'on');
 require_once 'DAL.php';
 $dal = new DAL();
 
