@@ -15,7 +15,7 @@ class DAL {
     `UserID` VARCHAR(40) NOT NULL ,
     `Password` varchar(32) NOT NULL,
     `Type` INT NOT NULL,
-    `API_KEY` varchar(16),
+    `API_KEY` varchar(40),
     PRIMARY KEY(UserID)
   )ENGINE=MyISAM DEFAULT CHARSET=latin1;';
 
@@ -233,6 +233,7 @@ class DAL {
       $client = new SoapClient($this->url,array("trace" => 1, "exception" => 0));
 
       $params = array('adminLojaID' => $AdminID);
+
       $result = $client->getAPI_KEY($params);
 
       return $result->getAPI_KEYResult;

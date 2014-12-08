@@ -14,11 +14,15 @@ if($adminName != $adminConfirm){
     return;
 }
 
+$API = $dal->getAdminAPI();
+echo $jsonReply = $dal->getAllAlbumsFromIDEIMusic($API);
+
 //verify API KEY
-if( $dal->verifyLocalAPI_KEY($adminName) == 0 || $dal->verifyLocalAPI_KEY($adminName) == -1){
+/*if( $dal->verifyLocalAPI_KEY($adminName) == 0 || $dal->verifyLocalAPI_KEY($adminName) == -1){
 
 
     $NewAPI = $dal->getAPI_KEYIDEIMusic($adminConfirm);
+
     //our error message
     if( strpos($NewAPI, 'Not') ){
       echo $NewAPI;
@@ -32,4 +36,4 @@ if( $dal->verifyLocalAPI_KEY($adminName) == 0 || $dal->verifyLocalAPI_KEY($admin
     $API = $dal->getAdminAPI();
     echo $jsonReply = $dal->getAllAlbumsFromIDEIMusic($API);
     return;
-}
+}*/
