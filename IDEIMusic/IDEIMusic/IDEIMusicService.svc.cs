@@ -21,6 +21,11 @@ namespace IDEIMusic
         {
         }
 
+        public string Test()
+        {
+            return "it works!";
+        }
+
         public string verifyAPI(string inputJSON)
         {
             JObject json_object = JObject.Parse(inputJSON);

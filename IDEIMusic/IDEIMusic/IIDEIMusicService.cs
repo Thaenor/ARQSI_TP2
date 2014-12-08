@@ -14,6 +14,8 @@ namespace IDEIMusic
         [OperationContract]
         void DoWork();
         [OperationContract]
+        string Test();
+        [OperationContract]
         string verifyAPI(string inputJSON);
         [OperationContract]
         string firstContact(string inputJSON);
